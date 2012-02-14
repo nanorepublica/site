@@ -1,0 +1,8 @@
+{
+	"page": "contact",
+	"quick": {
+		"email":"info@akmiller.co.uk",
+		"twitter":"<a href='https://twitter.com/nanorepublica' class='twitter-follow-button' data-show-count='false'>Follow @nanorepublica</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>",
+		"linkedin":"<a href='http://uk.linkedin.com/pub/andrew-miller/27/313/345' style='text-decoration:none;'><span style='font: 80% Arial,sans-serif; color:#0783B6;'><img src='http://www.linkedin.com/img/webpromo/btn_in_20x15.png' width='20' height='15' alt='View Andrew Miller's LinkedIn profile' style='vertical-align:middle' border='0'>View Andrew Miller's profile</span></a>"
+		}
+}

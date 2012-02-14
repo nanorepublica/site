@@ -1,0 +1,11 @@
+{% macro render_quick(page,dict) %}
+{% if page == 'index' %}
+	{{ dict|safe }}
+{% elif page == 'contact' %}
+	<ul id='qcontact'>
+	{% for key, item in dict.items() %}
+		<li>{{ item|safe }}</li>
+	{% endfor %}
+	</ul>
+{% endif %}
+{% endmacro %}

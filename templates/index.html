@@ -37,9 +37,9 @@
 <div id="content">
 
 <!-- here is your page content -->
-
+{% from "_helper.html" import render_quick %}
 <div class="pullquote"> 
-<p>...Sed felis. Phasellus enim. <b>Aliquam malesuada</b> mi eu erat. <b>Suspendisse </b> potenti... </p>
+{{ render_quick(content.page,content.quick) }}
 </div>
 
 <h3>Welcome!</h3>

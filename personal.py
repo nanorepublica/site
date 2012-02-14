@@ -1,18 +1,18 @@
 from flask import Flask, render_template, url_for
-import urllib2
+import urllib2,json
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
-	content = {about me,picture,qualification,experience,interest}
+	content = json.load(open('./static/index.json','r'))
 	return render_template('index.html',links=links, content=content)
 
 @app.route('/contact')
 def contact():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
-	content = {'quick':{'email':'info@akmiller.co.uk','twitter':'@nanorepublica','' linkedin}}
+	content = json.load(open('./static/contact.json','r'))
 	return render_template('index.html',links=links, content=content)
 
 @app.route('/blog')
