@@ -15,6 +15,10 @@ def contact():
 	content = json.load(open('./static/contact.json','r'))
 	return render_template('index.html',links=links, content=content)
 
+@app.route('/test')
+def test():
+	return render_template('test.html')
+
 @app.route('/blog')
 def blog():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
@@ -22,4 +26,4 @@ def blog():
 	return render_template('index.html',links=links, content=content)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=True,host='0.0.0.0')

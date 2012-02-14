@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: 'WebSymbolsRegular';
-    src: url('/static/websymbols-regular-webfont.eot');
-    src: url('/static/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/static/websymbols-regular-webfont.woff') format('woff'),
-         url('/static/websymbols-regular-webfont.ttf') format('truetype'),
-         url('/static/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    src: url('websymbols-regular-webfont.eot');
+    src: url('websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
