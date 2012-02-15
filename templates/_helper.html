@@ -9,3 +9,12 @@
 	</ul>
 {% endif %}
 {% endmacro %}
+
+{% macro render_content(dict) %}
+{% for k,v in dict|dictsort %}
+	{% if k not in ['page','quick'] %}
+		<h3>{{ v.title }}</h3>
+		{{ v.item|safe }}
+	{% endif %}
+{% endfor %}
+{% endmacro %}

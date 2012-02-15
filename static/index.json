@@ -1,8 +1,20 @@
 {
 	"page": "index",
 	"quick":"<img src='http://api.tumblr.com/v2/blog/nanorepublica.tumblr.com/avatar/128' />",
-	"about_me":"",
-	"qualifications":"",
-	"experience":"",
-	"interests":""
+	"0":{ 
+			"title":"about me",
+			"item":"Hi my name is Andrew"
+			},
+	"1":{
+			"title":"Qualifications",
+			"item":"Imperial, 4 A levels"
+			},
+	"2":{
+			"title":"Work Experience",
+			"item":"Ocado, eee robotics lab"
+			},
+	"3":{
+			"title":"Interests",
+			"item":"Video games"
+			}
 }
