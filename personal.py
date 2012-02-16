@@ -1,7 +1,7 @@
 from flask import Flask, render_template, url_for, flash, redirect
 from flaskext.wtf import Form, TextField, validators, TextAreaField
 from flaskext.wtf.html5 import EmailField
-import urllib2,json,copy
+import urllib2,json,copy,re
 from jinja2 import evalcontextfilter,Environment
 
 app = Flask(__name__)
@@ -12,13 +12,18 @@ class contactForm(Form):
 	email = EmailField('email:',[validators.Required()])
 	message = TextAreaField('Message:',[validators.Required()])
 
-#@evalcontextfilter
+@app.template_filter('split')
 def split(value):
-	lines = value.split('\n')
-	for line in lines:
-		if line.startswith('{{') and line.endswith('}}'):
-			line = "WORKS"
-	return '\n'.join(lines)
+	pattern = '(\{\{[a-zA-Z\.\_\(\)\ ]*\}\})'
+	result = re.split(pattern,value)	
+#	i = re.sub(pattern,'\g<1>',value)
+	print result
+	for i in result:
+		if not len(i):
+#			print i
+			result.remove(i)
+	print result
+	return render_template_string(''.join(result))
 
 
 
@@ -33,7 +38,7 @@ def contact():
 	contact = contactForm()
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
 	#content = open('./static/contact.content','r').read()
-	content = json.loads(''.join(open('./static/contact.content','r').read().split()))
+	content = json.loads(''.join(''.join(open('./static/contact.json','r').read().splitlines()).split('\t')))
 	if contact.validate_on_submit():
 		flash("Success")
 		return redirect(url_for("index"))
@@ -51,6 +56,6 @@ def blog():
 	return render_template('index.html',links=links, content=content)
 
 if __name__ == '__main__':
-	env = Environment()
-	env.filters['split'] = split
+#env = Environment()
+#	env.filters['split'] = split
 	app.run(debug=True,host='0.0.0.0')
