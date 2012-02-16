@@ -2,10 +2,31 @@
 {% if page == 'index' %}
 	{{ dict|safe }}
 {% elif page == 'contact' %}
-	<ul>
+	<ul id='qcontact'>
 	{% for key, item in dict.items() %}
 		<li>{{ item|safe }}</li>
 	{% endfor %}
 	</ul>
 {% endif %}
+{% endmacro %}
+
+{% macro render_content(dict) %}
+{% for k,v in dict|dictsort %}
+	{% if k not in ['page','quick'] %}
+		<h3>{{ v.title }}</h3>
+		
+		{{ v }}
+	{% endif %}
+{% endfor %}
+{% endmacro %}
+
+{% macro render_field(field) %}
+  <dt>{{ field.label }}
+  <dd>{{ field(**kwargs)|safe }}
+  {% if field.errors %}
+    <ul class="errors">
+    {% for error in field.errors %}<li>{{ error }}{% endfor %}
+    </ul>
+  {% endif %}
+  </dd>
 {% endmacro %}
