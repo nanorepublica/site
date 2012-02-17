@@ -43,7 +43,7 @@
 {{ render_quick(content.page,content.quick) }}
 </div>
 
-{{ render_content(content) }}
+{{ render_content(content=content,contact) }}
 
 <!-- end page content -->
 
@@ -56,12 +56,7 @@
 </div>
 </div>
 
-
-
-
 </div>
-
-
 
 </body>
 </html>

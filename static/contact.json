@@ -8,7 +8,8 @@
 			"title":"contact me",
 			"item":"<form method='post' action='/contact'>
 				<dl>
-			{{	render_field(contact.name)}}
+				{{ contact.csrf }}
+				{{ render_field(contact.name) }}
 				{{ render_field(contact.email) }}
 				{{ render_field(contact.message) }}
 				</dl>

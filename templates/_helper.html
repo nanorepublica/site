@@ -21,14 +21,14 @@
   </dd>
 {% endmacro %}
 
-{% macro render_content(dict) %}
-{% for k,v in dict|dictsort %}
+{% macro render_content(content,contact) %}
+{% for k,v in content|dictsort %}
 	{% if k not in ['page','quick'] %}
 		<h3>{{ v.title }}</h3>
 {#		{% for i in v.item|split %}
 			{{ i|safe }}
 		{% endfor %}#}
-		{{ v.item|safe }}
+		{{ v.item|split(contact)|safe }}
 	{% endif %}
 {% endfor %}
 {% endmacro %}
