@@ -14,6 +14,14 @@ class contactForm(Form):
 	name = TextField('Name:',[validators.Required()])
 	email = EmailField('email:',[validators.Required()])
 	message = TextAreaField('Message:',[validators.Required()])
+	
+def flash_errors(form):
+    for field, errors in form.errors.items():
+        for error in errors:
+            flash(u"Error in the %s field - %s" % (
+                getattr(form, field).label.text,
+                error
+            ))
 
 @app.template_filter('split')
 def split(value,contact):
@@ -30,6 +38,7 @@ def split(value,contact):
 def index():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
 	content = json.load(open('./static/index.json','r'))
+	print content
 	return render_template('index.html',links=links, content=content)
 
 @app.route('/contact', methods=("GET", "POST"))
@@ -38,7 +47,7 @@ def contact():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
 	content = json.loads(''.join(''.join(open('./static/contact.json','r').read().splitlines()).split('\t')))
 	if contactf.validate_on_submit():
-		msg = Message("New mail from %s" % contactf.data.name,sender=contactf.data.email,recipients=["info@akmiller.co.uk"],body=contactf.data.message)
+		msg = Message("New mail from %s" % contactf.data['name'],sender=contactf.data['email'],recipients=["info@akmiller.co.uk"],body=contactf.data['message'])
 		mail.send(msg)
 		return redirect(url_for("index"))
 		#pass #send an email to me & alter content to display success of some kind
@@ -55,6 +64,5 @@ def blog():
 	return render_template('index.html',links=links, content=content)
 
 if __name__ == '__main__':
-#env = Environment()
-#	env.filters['split'] = split
-	app.run(debug=True,host='0.0.0.0')
+	#app.run(debug=True,host='0.0.0.0')
+	app.run(debug=True)
