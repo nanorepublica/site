@@ -37,8 +37,7 @@ def split(value,contact):
 @app.route('/')
 def index():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
-	content = json.load(open('./static/index.json','r'))
-	print content
+	content = open('./static/index.json','r')
 	return render_template('index.html',links=links, content=content)
 
 @app.route('/contact', methods=("GET", "POST"))
@@ -65,4 +64,4 @@ def blog():
 
 if __name__ == '__main__':
 	#app.run(debug=True,host='0.0.0.0')
-	app.run(debug=True)
+	app.run(host='0.0.0.0')
