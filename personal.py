@@ -2,12 +2,13 @@ from flask import Flask, render_template, url_for, flash, redirect,render_templa
 from flaskext.wtf import Form, TextField, validators, TextAreaField
 from flaskext.wtf.html5 import EmailField
 import urllib2,json,copy,re
-#from jinja2 import evalcontextfilter,Environment
+from flaskext.flatpages import FlatPages
 from flaskext.mail import Mail, Message
 
 
 app = Flask(__name__)
 app.secret_key = 'm\xb2q\x19=\xc0S\xe9w\x19\xcd\x14\xb7\xa7x\xa4U\xdb<\xfb\x87\xc7C)'
+pages = FlatPages(app)
 mail = Mail(app)
 
 class contactForm(Form):
@@ -37,20 +38,26 @@ def split(value,contact):
 @app.route('/')
 def index():
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
-	content = open('./static/index.json','r')
-	return render_template('index.html',links=links, content=content)
+#	content = open('./static/index.json','r')
+	page = pages.get_or_404('index')
+#	print page['title']
+	return render_template('index.html',links=links, page=page)
 
 @app.route('/contact', methods=("GET", "POST"))
 def contact():
 	contactf = contactForm()
 	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
-	content = json.loads(''.join(''.join(open('./static/contact.json','r').read().splitlines()).split('\t')))
+#	content = json.loads(''.join(''.join(open('./static/contact.json','r').read().splitlines()).split('\t')))
+	page = pages.get_or_404('contact')
+	render_field = get_template_attribute('_helper.html','render_field')
+	page.html = render_template_string(page.html,contact=contactf,render_field=render_field)
+#	print type(page.body)
 	if contactf.validate_on_submit():
 		msg = Message("New mail from %s" % contactf.data['name'],sender=contactf.data['email'],recipients=["info@akmiller.co.uk"],body=contactf.data['message'])
 		mail.send(msg)
 		return redirect(url_for("index"))
 		#pass #send an email to me & alter content to display success of some kind
-	return render_template('index.html',links=links, content=content,contact=contactf)
+	return render_template('index.html',links=links, page=page,contactf=contactf)
 
 @app.route('/test')
 def test():
@@ -63,5 +70,5 @@ def blog():
 	return render_template('index.html',links=links, content=content)
 
 if __name__ == '__main__':
-	#app.run(debug=True,host='0.0.0.0')
-	app.run(host='0.0.0.0')
+	app.run(debug=True,host='0.0.0.0')
+#	app.run(host='0.0.0.0')

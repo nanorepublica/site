@@ -1,0 +1,22 @@
+# contact.html
+title: contact
+published: 2012-02-20
+
+<div class=pullquote>
+<ul id=qcontact>
+<li><span class='webf'>t &nbsp; &nbsp; </span><a href='https://twitter.com/nanorepublica'>@nanorepublica</a></li>
+<li><span class='webf'>l &nbsp; &nbsp; </span><a href='http://uk.linkedin.com/pub/andrew-miller/27/313/345'>Andrew Miller</a></li>
+</ul>
+</div>
+
+### contact me ###
+
+<form method='post' action='/contact'>
+<dl>
+{{ contact.csrf }}
+{{ render_field(contact.name) }}
+{{ render_field(contact.email) }}
+{{ render_field(contact.message) }}
+</dl>
+<p><input type=submit value=send>
+</form>
