@@ -1,15 +1,3 @@
-{% macro render_quick(page,dict) %}
-{% if page == 'index' %}
-	{{ dict|safe }}
-{% elif page == 'contact' %}
-	<ul id='qcontact'>
-	{% for key, item in dict.items() %}
-		<li>{{ item|safe }}</li>
-	{% endfor %}
-	</ul>
-{% endif %}
-{% endmacro %}
-
 {% macro render_field(field) %}
   <dt>{{ field.label }}
   <dd>{{ field(**kwargs)|safe }}
@@ -19,18 +7,6 @@
     </ul>
   {% endif %}
   </dd>
-{% endmacro %}
-
-{% macro render_content(content) %}
-{% for k,v in content|dictsort %}
-	{% if k not in ['page','quick'] %}
-		<h3>{{ v.title }}</h3>
-{#		{% for i in v.item|split %}
-			{{ i|safe }}
-		{% endfor %}#}
-		{{ v.item|split(contact)|safe }}
-	{% endif %}
-{% endfor %}
 {% endmacro %}
 
 

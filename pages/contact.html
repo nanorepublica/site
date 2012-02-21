@@ -16,7 +16,7 @@ published: 2012-02-20
 {{ contact.csrf }}
 {{ render_field(contact.name) }}
 {{ render_field(contact.email) }}
-{{ render_field(contact.message) }}
+{{ render_field(contact.message(cols="20")|safe) }}
 </dl>
 <p><input type=submit value=send>
 </form>
