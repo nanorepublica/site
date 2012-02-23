@@ -37,14 +37,8 @@
 <div id="container">
 <div id="content">
 
-<!-- here is your page content -->
-{% from "_helper.html" import render_quick,render_content,render_field %}
-<div class="pullquote"> 
-{{ render_quick(content.page,content.quick) }}
-</div>
 
-{{ render_content(content=content,contact) }}
-
+{{ page }}
 <!-- end page content -->
 
 <p class="footer">  
