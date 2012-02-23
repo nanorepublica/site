@@ -51,9 +51,11 @@ def contact():
 	page = pages.get_or_404('contact')
 	render_field = get_template_attribute('_helper.html','render_field')
 	page.html = render_template_string(page.html,contact=contactf,render_field=render_field)
-#	print type(page.body)
+#	print page.html
+#	print page.body
 	if contactf.validate_on_submit():
 		msg = Message("New mail from %s" % contactf.data['name'],sender=contactf.data['email'],recipients=["info@akmiller.co.uk"],body=contactf.data['message'])
+		print msg.body
 		mail.send(msg)
 		return redirect(url_for("index"))
 		#pass #send an email to me & alter content to display success of some kind
