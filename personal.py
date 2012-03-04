@@ -60,20 +60,20 @@ class contactForm(Form):
 
 @app.route('/')
 def index():
-	links = {'index':('home',url_for('index')),
-	 'contact':('contact',url_for('contact')),
-	 'blog':('blog',url_for('blog')),
-	 'portfolio':('portfolio',url_for('portfolio'))
+	links = {'Home':url_for('index'),
+	 'contact':url_for('contact'),
+	 'blog':url_for('blog'),
+	 'Portfolio':url_for('portfolio')
 	}
 	page = pages.get_or_404('index')
 	return render_template('index.html',links=links, page=page)
 
 @app.route('/contact', methods=("GET", "POST"))
 def contact():
-	links = {'index':('home',url_for('index')),
-	 'contact':('contact',url_for('contact')),
-	 'blog':('blog',url_for('blog')),
-	 'portfolio':('portfolio',url_for('portfolio'))
+	links = {'Home':url_for('index'),
+	 'contact':url_for('contact'),
+	 'blog':url_for('blog'),
+	 'Portfolio':url_for('portfolio')
 	}
 	contactf = contactForm()
 	page = pages.get_or_404('contact')
@@ -88,10 +88,10 @@ def contact():
 
 @app.route('/blog')
 def blog():
-	links = {'index':('home',url_for('index')),
-	 'contact':('contact',url_for('contact')),
-	 'blog':('blog',url_for('blog')),
-	 'portfolio':('portfolio',url_for('portfolio'))
+	links = {'Home':url_for('index'),
+	 'contact':url_for('contact'),
+	 'blog':url_for('blog'),
+	 'Portfolio':url_for('portfolio')
 	}
 	blog = tumblr.get('http://api.tumblr.com/v2/blog/nanorepublica.tumblr.com/posts?api_key=%s&limit=10'%api_key)
 	if blog.data['meta']['status'] == 200:
@@ -103,10 +103,10 @@ def blog():
 	
 @app.route('/portfolio')
 def portfolio():
-	links = {'index':('home',url_for('index')),
-	 'contact':('contact',url_for('contact')),
-	 'blog':('blog',url_for('blog')),
-	 'portfolio':('portfolio',url_for('portfolio'))
+	links = {'Home':url_for('index'),
+	 'contact':url_for('contact'),
+	 'blog':url_for('blog'),
+	 'Portfolio':url_for('portfolio')
 	}
 	page = pages.get_or_404('portfolio')
 	return render_template('index.html',links=links, page=page)

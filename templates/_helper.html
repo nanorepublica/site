@@ -15,3 +15,11 @@
 	{{ post.description|safe }}
 	<span style="font-size:0.75em">{{ post.date }}</span>
 {% endmacro %}
+
+{% macro render_links(links) %}
+	<ul id="navlist">
+	{% for key,link in links|dictsort(true) %}
+		<li><a href="{{ link }}">{{ key|lower }}</a></li>
+	{% endfor %}
+	</ul>
+{% endmacro %}

@@ -21,17 +21,10 @@
 
 <div id="title">.: Andrew Miller :.</div>
 
-
+{% from "_helper.html" import render_post, render_links %}
 
 <div id="navcontainer">
-<ul id="navlist">
-<li><a href="{{ links.index[1] }}">{{ links.index[0] }}</a></li>
-<li><a href="{{ links.blog[1] }}">{{ links.blog[0] }}</a></li>
-<li><a href="{{ links.portfolio[1] }}">{{ links.portfolio[0] }}</a></li>
-<!-- <li><a href="#">links</a></li> -->
-<li><a href="{{ links.contact[1] }}">{{ links.contact[0] }}</a></li>
-<!-- <li><a href="http://validator.w3.org/check?uri=referer">xhtml</a></li> -->
-</ul>
+{{ render_links(links) }}
 </div>
 
 <div id="container">
@@ -41,7 +34,7 @@
 <div class="pullquote">
 {{ desc }}
 </div>
-{% from "_helper.html" import render_post %}
+
 {% for post in blog %}
 	{{ render_post(post) }}
 {% endfor %}
