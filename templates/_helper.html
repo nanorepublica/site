@@ -5,8 +5,13 @@
     <ul class="errors">
     {% for error in field.errors %}<li>{{ error }}{% endfor %}
     </ul>
-
-
   {% endif %}
   </dd>
+{% endmacro %}
+
+{% macro render_post(post) %}
+	{# post #}
+	<h3>{{ post.title }}</h3>
+	{{ post.description|safe }}
+	<span style="font-size:0.75em">{{ post.date }}</span>
 {% endmacro %}

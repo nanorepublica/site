@@ -11,6 +11,7 @@ app = Flask(__name__)
 app.secret_key = 'm\xb2q\x19=\xc0S\xe9w\x19\xcd\x14\xb7\xa7x\xa4U\xdb<\xfb\x87\xc7C)'
 pages = FlatPages(app)
 mail = Mail(app)
+api_key = '9L7mlUckx8GspKCYfsf4OIKvYGQi7iLM4LQcuGa1x4Pu7dmgy5'
 oauth = OAuth()
 tumblr = oauth.remote_app('tumblr',
 		base_url='http://api.tumblr.com/v2/',
@@ -18,13 +19,9 @@ tumblr = oauth.remote_app('tumblr',
 		access_token_url='http://www.tumblr.com/oauth/access_token',
 		authorize_url='http://www.tumblr.com/oauth/authorize',
 		consumer_key='9L7mlUckx8GspKCYfsf4OIKvYGQi7iLM4LQcuGa1x4Pu7dmgy5',
-		consumer_secret='9L7mlUckx8GspKCYfsf4OIKvYGQi7iLM4LQcuGa1x4Pu7dmgy5'
+		consumer_secret='FVR2CYA5oB4JOCLyjYAWEZ3put8f9FJXqFauegGkT9xiWyoelK'
 		)
 
-class contactForm(Form):
-	name = TextField('Name:',[validators.Required()])
-	email = EmailField('email:',[validators.Required()])
-	message = TextAreaField('Message:',[validators.Required()])
 
 @tumblr.tokengetter
 def get_tumblr_token():
@@ -44,8 +41,6 @@ def oauth_authorized(resp):
 		return redirect(next_url)
 
 	session['tumblr_token'] = (resp['oauth_token'], resp['oauth_token_secret'])
-	
-	print resp
 	return redirect(next_url)
 
 def flash_errors(form):
@@ -55,28 +50,32 @@ def flash_errors(form):
                 getattr(form, field).label.text,
                 error
             ))
-
-@app.template_filter('split')
-def split(value,contact):
-	pattern = '(\{\{[a-zA-Z\.\_\(\)\ ]*\}\})'
-	result = re.split(pattern,value)
-	render_field = get_template_attribute('_helper.html','render_field')
-	t = ''
-	for i in result:
-		if len(i):
-			t = '%s%s' % (t,render_template_string(i,contact=contact,render_field=render_field))
-	return t
+            
+class contactForm(Form):
+	name = TextField('Name:',[validators.Required()])
+	email = EmailField('email:',[validators.Required()])
+	message = TextAreaField('Message:',[validators.Required()])
+	
+################ Page views below ####################
 
 @app.route('/')
 def index():
-	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
+	links = {'index':('home',url_for('index')),
+	 'contact':('contact',url_for('contact')),
+	 'blog':('blog',url_for('blog')),
+	 'portfolio':('portfolio',url_for('portfolio'))
+	}
 	page = pages.get_or_404('index')
 	return render_template('index.html',links=links, page=page)
 
 @app.route('/contact', methods=("GET", "POST"))
 def contact():
+	links = {'index':('home',url_for('index')),
+	 'contact':('contact',url_for('contact')),
+	 'blog':('blog',url_for('blog')),
+	 'portfolio':('portfolio',url_for('portfolio'))
+	}
 	contactf = contactForm()
-	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
 	page = pages.get_or_404('contact')
 	if contactf.validate_on_submit():
 		msg = Message("New mail from %s" % contactf.data['name'],sender=contactf.data['email'],recipients=["info@akmiller.co.uk"],body=contactf.data['message'])
@@ -87,16 +86,31 @@ def contact():
 	page.html = render_template_string(page.html,contact=contactf,render_field=render_field)
 	return render_template('index.html',links=links, page=page,contactf=contactf)
 
-@app.route('/test')
-def test():
-	return render_template('test.html')
-
 @app.route('/blog')
 def blog():
-	links = {'home':('home',url_for('index')),'contact':('contact',url_for('contact')),'blog':('blog',url_for('blog'))}
-	content = {}
-	info = tumblr.get('http://api.tumblr.com/v2/blog/nanorepublica.tumblr.com/info')
-	return render_template('index.html',links=links, content=content)
+	links = {'index':('home',url_for('index')),
+	 'contact':('contact',url_for('contact')),
+	 'blog':('blog',url_for('blog')),
+	 'portfolio':('portfolio',url_for('portfolio'))
+	}
+	blog = tumblr.get('http://api.tumblr.com/v2/blog/nanorepublica.tumblr.com/posts?api_key=%s&limit=10'%api_key)
+	if blog.data['meta']['status'] == 200:
+		desc = blog.data['response']['blog']['description']
+		blog = blog.data['response']['posts']
+	else:
+		desc = 'Could not retrieve blog description from tumblr'
+	return render_template('blog.html',links=links, desc=desc, blog=blog)
+	
+@app.route('/portfolio')
+def portfolio():
+	links = {'index':('home',url_for('index')),
+	 'contact':('contact',url_for('contact')),
+	 'blog':('blog',url_for('blog')),
+	 'portfolio':('portfolio',url_for('portfolio'))
+	}
+	page = pages.get_or_404('portfolio')
+	return render_template('index.html',links=links, page=page)
+
 
 if __name__ == '__main__':
 	app.run(debug=True,host='0.0.0.0')

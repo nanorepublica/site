@@ -25,9 +25,9 @@
 
 <div id="navcontainer">
 <ul id="navlist">
-<li><a href="{{ links.home[1] }}">{{ links.home[0] }}</a></li>
+<li><a href="{{ links.index[1] }}">{{ links.index[0] }}</a></li>
 <li><a href="{{ links.blog[1] }}">{{ links.blog[0] }}</a></li>
-<!-- <li><a href="#">portfolio</a></li> -->
+<li><a href="{{ links.portfolio[1] }}">{{ links.portfolio[0] }}</a></li>
 <!-- <li><a href="#">links</a></li> -->
 <li><a href="{{ links.contact[1] }}">{{ links.contact[0] }}</a></li>
 <!-- <li><a href="http://validator.w3.org/check?uri=referer">xhtml</a></li> -->
@@ -37,8 +37,15 @@
 <div id="container">
 <div id="content">
 
+<!-- here is your page content -->
+<div class="pullquote">
+{{ desc }}
+</div>
+{% from "_helper.html" import render_post %}
+{% for post in blog %}
+	{{ render_post(post) }}
+{% endfor %}
 
-{{ page }}
 <!-- end page content -->
 
 <p class="footer">  
