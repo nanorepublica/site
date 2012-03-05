@@ -93,12 +93,12 @@ def blog():
 	 'blog':url_for('blog'),
 	 'Portfolio':url_for('portfolio')
 	}
-	blog = tumblr.get('http://api.tumblr.com/v2/blog/nanorepublica.tumblr.com/posts?api_key=%s&limit=10'%api_key)
-	if blog.data['meta']['status'] == 200:
-		desc = blog.data['response']['blog']['description']
-		blog = blog.data['response']['posts']
+	blog = simplejson.load(urllib2.urlopen('http://api.tumblr.com/v2/blog/nanorepublica.tumblr.com/posts?api_key=%s&limit=10'%api_key))
+	if blog['meta']['status'] == 200:
+		desc = blog['response']['blog']['description']
+		blog = blog['response']['posts']
 	else:
-		desc = 'Could not retrieve blog description from tumblr'
+		desc = 'Could not retrieve blog information from tumblr'
 	return render_template('blog.html',links=links, desc=desc, blog=blog)
 	
 @app.route('/portfolio')
