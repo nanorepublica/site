@@ -18,8 +18,8 @@
 
 {% macro render_links(links) %}
 	<ul id="navlist">
-	{% for key,link in links|dictsort(true) %}
-		<li><a href="{{ link }}">{{ key|lower }}</a></li>
+	{% for key,link in links|dictsort(false,'value') %}
+		<li><a href="{{ link[1] }}">{{ key }}</a></li>
 	{% endfor %}
 	</ul>
 {% endmacro %}
