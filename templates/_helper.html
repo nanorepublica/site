@@ -11,8 +11,46 @@
 
 {% macro render_post(post) %}
 	{# post #}
-	<h3>{{ post.title }}</h3>
-	{{ post.description|safe }}
+	
+	{% if post.type == "text" %}
+		<h3>{{ post.title }}</h3>
+		{{ post.body|safe }}
+	{% elif post.type == "photo" %}
+		<h3>{{ post.caption|safe }}</h3>
+		{% for photo in post.photos %}
+			{% for p in photo.alt_sizes %}
+				<img src="{{ photo.url }}"/>
+			{% endfor %}
+		{% endfor %}
+	{% elif post.type == "quote" %}
+		<h3><a href={{ post.source_url }}>{{ post.source_title }}</a></h3>
+		{{ post.text|safe }}
+		{{ post.source|safe }} want to be slightly smaller
+	{% elif post.type == "link" %}
+		<h3><a href={{ post.url }}>{{ post.title }}</a></h3>
+		{{ post.description|safe }}
+	{% elif post.type == "chat" %}
+		{% if post.title %}
+			<h3>{{ post.title }}</h3>
+		{% else %}
+			<h3>Chat: {{ post.date }}</h3>
+		{% for speech in post.dialogue %}
+			{{ speech.label }} {{ speech.phrase }}
+		{% endfor %}
+	{% elif post.type == "audio" %}
+		<h3><a href={{ post.source_url }}>{{ post.source_title }}</a></h3><h4>({{ post.id3_title }})</h4>
+		{{ post.player|safe }}
+		{{ post.caption|safe }}
+	{% elif post.type == "video" %}
+		<h3><a href={{ post.source_url }}>{{ post.source_title }}</a></h3>
+		{{ post.caption|safe }}
+		{% for video in post.player %}
+			{{ video.embed_code|safe }}
+		{% endfor %}
+	{% elif post.type == "answer" %}
+		<h3>{{ post.question }}</h3>(<a href={{ post.asking_url }}>{{ post.asking_name }}</a>)
+		{{ post.answer|safe }}
+	{% endif %}
 	<span style="font-size:0.75em">{{ post.date }}</span>
 {% endmacro %}
 
