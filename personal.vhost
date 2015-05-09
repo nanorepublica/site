@@ -1,11 +1,12 @@
 <VirtualHost *:80>
-#	ServerName www.akmiller.co.uk
+	ServerName www.akmiller.co.uk
+	ServerName akmiller.co.uk
 	ServerName personal
 
-	WSGIDaemonProcess personal user=think group=www threads=5
-	WSGIScriptAlias / /home/think/public_html/personal/personal.wsgi
+	WSGIDaemonProcess personal user=www-data group=www-data threads=5
+	WSGIScriptAlias / /home/andrew/personal-site/personal.wsgi
 
-	<Directory /home/think/public_html/personal/>
+	<Directory /home/andrew/personal-site/>
 		WSGIProcessGroup personal
 		WSGIApplicationGroup %{GLOBAL}
 		Order deny,allow

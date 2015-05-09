@@ -11,12 +11,3 @@ published: 2012-02-20
 
 ### contact me ###
 
-<form method='post' action='/contact'>
-<dl>
-{{ contact.csrf }}
-{{ render_field(contact.name) }}
-{{ render_field(contact.email) }}
-{{ render_field(contact.message,rows='10',cols='40') }}
-</dl>
-<p><input type=submit value=send>
-</form>
