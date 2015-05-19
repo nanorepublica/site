@@ -4,27 +4,36 @@ title: About
 ---
 
 
-Hi, I'm graduate Software/Systems Engineer currently working for Ocado, the only dedicated online supermarket in the UK.
+Hi, I am Software Engineer/Developer currently working for Ocado Technology.
 
-However, I am always open to new opportunities in small to medium sized companies around the Greater London area, that are not related to the financial industry,
-that offer the prospect to tackle a wide range of problems from intelligent web-apps to low-level hardware problems
+However, I am always open to new opportunities in small to medium sized companies in the Cambridge area. Ideally these are not related to finance or hedgefunds, but offer the prospect to tackle interesting problems giving me the opportunity to expand my skill set while benefiting society along the way.
 
-I also have a keen interest in artificial intelligence/multi-agent systems, computer vision and machine learning as well as robotics and UAV's.
+I have a keen interest in artificial intelligence/multi-agent systems, computer vision, machine learning, robotics & UI/UX.
 
+I am currently teaching myself to develop Android apps.
 
 
 ### Qualifications ###
 
-For my A levels I gained 2 A's in Mathematics and Physics and 2 B's in Further Mathematics and Computing
-
 At degree level, I graduated with a 2:1 from Imperial College London reading Information Systems Engineering MEng.
 
-Finally I have just completed a beginners course short evening course in graphic design at Central St. Martins
+I have taken a series of other courses either as part of my work or for my own interest:
 
-### Work Experience ###
+* a beginners course short course in graphic design at Central St. Martins
+* online course in Functional Programming & Human Computer Interaction
+* Google's Cloud Qualified Developer course
+* Internal Web Security Course
 
-I currently work at [Ocado Technology](http://www.ocadotechnology.com) which is the IT department of [Ocado](www.ocado.com).
-I am currently responsible for developing new infrastructure systems as part of the Netnix team making the IT infrastructure more autonomous and efficient.
+Finally for my A levels I gained 2 A's in Mathematics and Physics and 2 B's in Further Mathematics and Computing
+
+
+### Experience ###
+
+I currently work at [Ocado Technology](http://www.ocadotechnology.com) which is the technology division of [Ocado](www.ocado.com).
+I am currently working as part of team to developing new software platforms in span our local development, internal cloud systems, AWS & Google Cloud. This is based on Mesos & Marathon with a set of micro-services providing additional functionality allowing developers to declare mult-tier systems in a declarative fashion.
+In the past I have been responsible for automating existing infrastructure systems and developing new ones as part of the Netnix team.
+
+
 
 Previously I have worked at [Cotswold Outdoor](www.cotswoldoutdoor.com) as a retail sales assistant at the London Covent Garden store,
 as well as doing various part time jobs at Imperial College London.
@@ -33,11 +42,11 @@ During my time at University, I worked in the Imperial College EEE Robotics lab 
 
 ### Interests ###
 
-In my spare time I enjoy playing Video games, watching films, and discussing the finer points of life otherwise known as socialising!
+In my spare time I enjoy playing video games, board games, watching films, occasionally building bikes, and discussing the finer points of life otherwise known as a pint down the pub!
 
-I am also interested in photography, graphic design, robotics especially Unmanned Aerial Vehicles (UAVs) and the latest news in technology and computing.
+I am also interested in graphic design, keeping up with the latest technology & open source software, photography, and robotics in particular Unmanned Aerial Vehicles (UAVs).
 
-I also enjoy skiing and rock climbing as well as having achieved grade 5 in the clarinet.
+I also enjoy cycling, skiing & rock climbing as well as having achieved grade 5 in the clarinet.
 
 
 <p class="message" style="text-align:center;">
