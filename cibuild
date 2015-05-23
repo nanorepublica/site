@@ -1,2 +1,2 @@
 gem install jekyll html-proofer
-jekyll build && htmlproof ./_site
+jekyll build && htmlproof ./_site --href-ignore "https://uk.linkedin.com/pub/andrew-miller/27/313/345"
