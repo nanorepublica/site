@@ -4,6 +4,9 @@ rvm:
 # Assume bundler is being used, install step will run `bundle install`.
 script: ./cibuild
 
+before_script:
+ - chmod +x cibuild
+
 # branch whitelist
 branches:
   only:
