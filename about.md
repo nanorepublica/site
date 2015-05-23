@@ -28,13 +28,13 @@ Finally for my A levels I gained 2 A's in Mathematics and Physics and 2 B's in F
 
 ## Experience
 
-I currently work at [Ocado Technology](http://www.ocadotechnology.com) which is the technology division of [Ocado](www.ocado.com).
+I currently work at [Ocado Technology](http://www.ocadotechnology.com) which is the technology division of [Ocado](https://www.ocado.com).
 I am currently working as part of team to developing new software platforms in span our local development, internal cloud systems, AWS & Google Cloud. This is based on Mesos & Marathon with a set of micro-services providing additional functionality allowing developers to declare mult-tier systems in a declarative fashion.
 In the past I have been responsible for automating existing infrastructure systems and developing new ones as part of the Netnix team.
 
 
 
-Previously I have worked at [Cotswold Outdoor](www.cotswoldoutdoor.com) as a retail sales assistant at the London Covent Garden store,
+Previously I have worked at [Cotswold Outdoor](https://www.cotswoldoutdoor.com) as a retail sales assistant at the London Covent Garden store,
 as well as doing various part time jobs at Imperial College London.
 
 During my time at University, I worked in the Imperial College EEE Robotics lab on an autonomous helicopter project.
@@ -49,5 +49,5 @@ I also enjoy cycling, skiing & rock climbing as well as having achieved grade 5 
 
 
 <p class="message" style="text-align:center;">
-If your interested, you can download my CV <a href="public/static/CV.pdf">here</a>
+If your interested, you can download my CV <a href="{{ site.cv }}">here</a>
 </p>
