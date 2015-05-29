@@ -8,5 +8,7 @@ else
     jekyll build --drafts && htmlproof ./_site --href-ignore "https://uk.linkedin.com/pub/andrew-miller/27/313/345"
 fi
 
-git add _site
+git config user.email "travisci@akmiler.co.uk"
+git config user.name "Travis CI"
+git add -f _site
 git commit -m "Deploy commit ${TRAVIS_COMMIT} with build ${TRAVIS_BUILD_NUMBER}"
