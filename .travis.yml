@@ -8,10 +8,10 @@ before_script:
  - chmod +x cibuild
 
 after_success:
-  - openssl aes-256-cbc -K $encrypted_75777d40d7e6_key -iv $encrypted_75777d40d7e6_iv -in .travis/private.pem.enc -out .travis/private.pem -d
-  - chmod 600 .travis/private.pem # this key should have push access
+  - openssl aes-256-cbc -K $encrypted_75777d40d7e6_key -iv $encrypted_75777d40d7e6_iv -in .travis/id_rsa.enc -out id_rsa -d
+  - chmod 600 id_rsa # this key should have push access
   - eval "$(ssh-agent -s)"
-  - ssh-add .travis/private.pem
+  - ssh-add id_rsa
   - git remote add deploy ssh://deploy@akmiller.co.uk/opt/deploy/site
   - git push deploy
 
