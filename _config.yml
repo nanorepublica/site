@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Andrew Miller
+# tagline:          'What do you see?'
+description:      'Hello! This is my little corner of the internet, I hope to start writing & posting more.'
+url:              http://hyde.getpoole.com
+
+# author:
+#   name:           'Mark Otto'
+#   url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Custom vars
+# version:          2.0.0
+
+# github:
+#   repo:           https://github.com/poole/hyde
+
+
+github: https://github.com/nanorepublica
+linkedin: https://uk.linkedin.com/pub/andrew-miller/27/313/345
+twitter: https://twitter.com/nanorepublica
+cv: /public/CV.pdf
