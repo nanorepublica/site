@@ -19,7 +19,7 @@ after_success:
 branches:
   only:
   - dev    # test the gh-pages branch
-  - master:
+  - master
   # - /pages-(.*)/ # test every branch which starts with "pages-"
 
 addons:
