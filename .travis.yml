@@ -12,7 +12,6 @@ after_success:
   - chmod 600 id_rsa # this key should have push access
   - eval "$(ssh-agent -s)"
   - ssh-add id_rsa
-  - git branch
   - git remote add deploy ssh://deploy@akmiller.co.uk/opt/deploy/site
   - git push deploy deploy-$TRAVIS_BRANCH
 
