@@ -13,8 +13,6 @@ after_success:
   - eval "$(ssh-agent -s)"
   - ssh-add id_rsa
   - git remote add deploy ssh://deploy@akmiller.co.uk/opt/deploy/site
-  - git fetch deploy
-  - git diff $TRAVIS_BRANCH deploy/deploy-$TRAVIS_BRANCH
   - git push deploy deploy-$TRAVIS_BRANCH
 
 # branch whitelist
