@@ -2,6 +2,8 @@
 
 This is the code for my website, based of Jekyll, see below for more details on that.
 
+Deployment status is reported by a pushbullet channel!
+
 
 # Hyde
 
