@@ -28,5 +28,6 @@ github: https://github.com/nanorepublica
 linkedin: https://uk.linkedin.com/pub/andrew-miller/27/313/345
 twitter: https://twitter.com/nanorepublica
 cv: /public/CV.pdf
+rss: /atom.xml
 
 exclude: [old, notes.md]
