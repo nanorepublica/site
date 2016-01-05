@@ -31,3 +31,5 @@ cv: /public/CV.pdf
 rss: /atom.xml
 
 exclude: [old, notes.md]
+
+gems: [jekyll-paginate]
