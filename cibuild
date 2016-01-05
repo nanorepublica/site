@@ -1,4 +1,4 @@
-gem install jekyll html-proofer
+gem install jekyll html-proofer jekyll-paginate
 
 git checkout -b deploy-$TRAVIS_BRANCH
 
