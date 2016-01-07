@@ -9,11 +9,11 @@ permalink:        pretty
 title:            Andrew Miller
 # tagline:          'What do you see?'
 description:      'Hello! This is my little corner of the internet, I hope to start writing & posting more.'
-url:              https://akmiller.co.uk
+url:              https://akmiller.co.uk/
 
-# author:
-#   name:           'Mark Otto'
-#   url:            https://twitter.com/mdo
+author:
+  name:           'Andrew Miller'
+  email:           info@akmiller.co.uk
 
 paginate:         5
 
