@@ -4,7 +4,7 @@
  <title>Andrew Miller</title>
  <link href="https://akmiller.co.uk/atom.xml" rel="self"/>
  <link href="https://akmiller.co.uk/"/>
- <updated>2016-08-23T08:36:32+01:00</updated>
+ <updated>2016-08-24T07:53:09+01:00</updated>
  <id>https://akmiller.co.uk/</id>
  <author>
    <name>Andrew Miller</name>
@@ -13,11 +13,26 @@
 
  
  <entry>
+   <title>HTTPS & Let's Encrypt</title>
+   <link href="https://akmiller.co.uk//2016/08/24/day-two/"/>
+   <updated>2016-08-24T00:00:00+01:00</updated>
+   <id>https://akmiller.co.uk//2016/08/24/day-two</id>
+   <content type="html">&lt;p&gt;At the tail end of last year (2015), the Linux Foundation announced the public beta release of a new Certificate Authority (CA) under the name &amp;quot;Let&amp;#39;s Encrypt&amp;quot;. The main thing that differentiates this CA from others is that it is free. At the beginning of the year I dove right in &amp;amp; setup certificates for this site and my wedding website. The process was a bit clunky to begin with, but by the time it came to test the renewal approximately 80 days later (which didn&amp;#39;t go smoothly, what does first time around?), the Let&amp;#39;s Encrypt team had significantly improved the process of renewals. Therefore to my delight any site I now setup will have an automatically renewing SSL certificate.&lt;/p&gt;
+
+&lt;p&gt;You may be asking why is this so important? Why is a free CA something to write about? Most internet users know that they should check for the green padlock when logging into a secure site (e.g. banking, e-commerce), this means that the site has a SSL certificate so any information you send to their servers is encrypted and no one should be able to read that information except the intended recipients. Having HTTPS is so important these days that Google even takes it into consideration when ranking search results, it should be done by default. However SSL certificates cost hundreds if not thousands a year, the thousands is for when the company name is shown in the address bar of your browser (see below for an example). The fact that these normally cost so much puts them out of reach of individuals looking to secure their website.&lt;/p&gt;
+
+&lt;p&gt;Therefore the work that Let&amp;#39;s Encrypt is doing in bringing an automated free solution is so important for the web of tomorrow and truly allows HTTPS to be the default when setting up a website. This is especially true when service providers are integrating the Let&amp;#39;s Encrypt solution into their platforms, for example Netifly and Heroku? have already done this.&lt;/p&gt;
+
+&lt;p&gt;If you have your own site and are looking to get https added, check out the Let&amp;#39;s Encrypt documentation &lt;a href=&quot;https://dsjk&quot;&gt;here&lt;/a&gt; or send &lt;a href=&quot;https://dmn&quot;&gt;this&lt;/a&gt; information to your service provider asking them when they intend to offer https for free.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Article a Day</title>
    <link href="https://akmiller.co.uk//2016/08/23/post-a-day/"/>
    <updated>2016-08-23T00:00:00+01:00</updated>
    <id>https://akmiller.co.uk//2016/08/23/post-a-day</id>
-   <content type="html">&lt;p&gt;So I have been hugely enjoying David Kavady&amp;#39;s podcast &lt;a href=&quot;http://kadavy.net/blog/posts/love-your-work-my-new-podcast/&quot;&gt;&amp;#39;Love your work&amp;#39;&lt;/a&gt;, it is such an inspiration to listen to on a weekly basis. From this and several other sources (&lt;a href=&quot;http://thec3.uk/Media/Player.aspx?media_id=173287&amp;amp;file_id=185290&quot;&gt;thefaithgap&lt;/a&gt;) I have decided to write and publish a blog post before 9am every day. These will vary in length but most likely be short &amp;amp; sweet as I am not the best writer and given my current commute (~50 min train journey) there will be mostly my own thoughts from what I can remember when referencing external material or what I can dream up. Luckily I normally get into work well before 9am so I can correct any links and do a quick check against things I reference.&lt;/p&gt;
+   <content type="html">&lt;p&gt;So I have been hugely enjoying David Kavady&amp;#39;s podcast &lt;a href=&quot;http://kadavy.net/blog/posts/love-your-work-my-new-podcast/&quot;&gt;&amp;#39;Love your work&amp;#39;&lt;/a&gt;, it is such an inspiration to listen to on a weekly basis. From this (he has written a 500 word Medium post every day for a couple of months) and several other sources (&lt;a href=&quot;http://thec3.uk/Media/Player.aspx?media_id=173287&amp;amp;file_id=185290&quot;&gt;thefaithgap&lt;/a&gt;) I have decided to write and publish a blog post before 9am every day. These will vary in length but most likely be short &amp;amp; sweet as I am not the best writer and given my current commute (~50 min train journey) there will be mostly my own thoughts from what I can remember when referencing external material or what I can dream up. Luckily I normally get into work well before 9am so I can correct any links and do a quick check against things I reference.&lt;/p&gt;
 
 &lt;p&gt;The main point is that I start writing and put my contribution however small out in to the world and have faith that I can do just that.&lt;/p&gt;
 </content>

@@ -4,12 +4,12 @@
 * Packer
 * Python?
 * Puppet?
-* Books - question one, phoenix project
+* Books - question one
 * podcasts (games, love your work, talking machines)
-* homeless
+* homelessness
 * donateback
 * graphic design work
 * bike
-* thyme - time tracking
+* thyme - time tracking - WIP
 
 * games (video, board)

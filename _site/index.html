@@ -69,6 +69,10 @@
           
         
       
+        
+          
+        
+      
 
       <!-- <li class="sidebar-nav-item"><a href="/archive/v.zip">Download</a></li> -->
       <li class="sidebar-nav-item">
@@ -93,6 +97,26 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="/2016/08/24/day-two/">
+        HTTPS & Let's Encrypt
+      </a>
+    </h1>
+
+    <span class="post-date">24 Aug 2016</span>
+
+    <p>At the tail end of last year (2015), the Linux Foundation announced the public beta release of a new Certificate Authority (CA) under the name &quot;Let&#39;s Encrypt&quot;. The main thing that differentiates this CA from others is that it is free. At the beginning of the year I dove right in &amp; setup certificates for this site and my wedding website. The process was a bit clunky to begin with, but by the time it came to test the renewal approximately 80 days later (which didn&#39;t go smoothly, what does first time around?), the Let&#39;s Encrypt team had significantly improved the process of renewals. Therefore to my delight any site I now setup will have an automatically renewing SSL certificate.</p>
+
+<p>You may be asking why is this so important? Why is a free CA something to write about? Most internet users know that they should check for the green padlock when logging into a secure site (e.g. banking, e-commerce), this means that the site has a SSL certificate so any information you send to their servers is encrypted and no one should be able to read that information except the intended recipients. Having HTTPS is so important these days that Google even takes it into consideration when ranking search results, it should be done by default. However SSL certificates cost hundreds if not thousands a year, the thousands is for when the company name is shown in the address bar of your browser (see below for an example). The fact that these normally cost so much puts them out of reach of individuals looking to secure their website.</p>
+
+<p>Therefore the work that Let&#39;s Encrypt is doing in bringing an automated free solution is so important for the web of tomorrow and truly allows HTTPS to be the default when setting up a website. This is especially true when service providers are integrating the Let&#39;s Encrypt solution into their platforms, for example Netifly and Heroku? have already done this.</p>
+
+<p>If you have your own site and are looking to get https added, check out the Let&#39;s Encrypt documentation <a href="https://dsjk">here</a> or send <a href="https://dmn">this</a> information to your service provider asking them when they intend to offer https for free.</p>
+
+    #letsencrypt #httpseverywhere #security #ssl
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="/2016/08/23/post-a-day/">
         Article a Day
       </a>
@@ -100,7 +124,7 @@
 
     <span class="post-date">23 Aug 2016</span>
 
-    <p>So I have been hugely enjoying David Kavady&#39;s podcast <a href="http://kadavy.net/blog/posts/love-your-work-my-new-podcast/">&#39;Love your work&#39;</a>, it is such an inspiration to listen to on a weekly basis. From this and several other sources (<a href="http://thec3.uk/Media/Player.aspx?media_id=173287&amp;file_id=185290">thefaithgap</a>) I have decided to write and publish a blog post before 9am every day. These will vary in length but most likely be short &amp; sweet as I am not the best writer and given my current commute (~50 min train journey) there will be mostly my own thoughts from what I can remember when referencing external material or what I can dream up. Luckily I normally get into work well before 9am so I can correct any links and do a quick check against things I reference.</p>
+    <p>So I have been hugely enjoying David Kavady&#39;s podcast <a href="http://kadavy.net/blog/posts/love-your-work-my-new-podcast/">&#39;Love your work&#39;</a>, it is such an inspiration to listen to on a weekly basis. From this (he has written a 500 word Medium post every day for a couple of months) and several other sources (<a href="http://thec3.uk/Media/Player.aspx?media_id=173287&amp;file_id=185290">thefaithgap</a>) I have decided to write and publish a blog post before 9am every day. These will vary in length but most likely be short &amp; sweet as I am not the best writer and given my current commute (~50 min train journey) there will be mostly my own thoughts from what I can remember when referencing external material or what I can dream up. Luckily I normally get into work well before 9am so I can correct any links and do a quick check against things I reference.</p>
 
 <p>The main point is that I start writing and put my contribution however small out in to the world and have faith that I can do just that.</p>
 
@@ -180,27 +204,11 @@
     #ops #slack #bots #chat
   </div>
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2015/05/19/new-website/">
-        New Website!
-      </a>
-    </h1>
-
-    <span class="post-date">19 May 2015</span>
-
-    <p>So I have decided to switch from the custom setup I had before (based of the python framework <a href="http://flask.pocoo.org">flask</a> &amp; <a href="http://apache.org">apache</a>) to a much simpler one using <a href="http://jekyllrb.com">Jekyll</a> &amp; <a href="http://nginx.org">nginx</a>. Why Jekyll? Well it is one of the more popular static site generators &amp; I have some experience from converting my sister&#39;s website over to it a few months back (<a href="http://beckymiller.co.uk">beckymiller.co.uk</a>). Currently I have used the Hyde theme as it caught my eye, but I hope to move to my own design before long.</p>
-
-<p>Given Jekyll is designed for blogs, I hope to start writing more posts, especially since I have now setup Travis CI to deploy this site automatically.</p>
-
-    #website #intro
-  </div>
-  
 </div>
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="/page2">Older</a>
   
   
     <span class="pagination-item newer">Newer</span>
