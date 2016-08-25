@@ -97,8 +97,28 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="/2016/08/25/day-three/">
+        Amusing CRM message
+      </a>
+    </h1>
+
+    <span class="post-date">25 Aug 2016</span>
+
+    <p>A quick post today as I am starting slightly later than usual. A couple of days ago at work the whole dev team received an email from a service that shall remain nameless. This service is used to monitor errors that occur on our site and currently we only use it for front-end javascript errors as we have a separate service for backend exceptions. The purpose of the email was to highlight that this service could do our backend exceptions as well; this is fine I personally don&#39;t like that we have two services to monitor exceptions. However the message was possibly a little to honest, see the quote below:</p>
+
+<blockquote>
+<p>Honestly I think we&#39;re more purpose built for back-end error monitoring. :-)</p>
+</blockquote>
+
+<p>And with that one sentence we have started looking at other providers to monitor our front-end errors and they have potentially lost a customer. Moral of the story: They assumed that we would want to switch our back-end monitoring without knowing anything about our back-end stack, but they actually revealed the weakness of there front-end monitoring!</p>
+
+    #monitoring #funny #becarefulwhatyousendout
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="/2016/08/24/day-two/">
-        HTTPS & Let's Encrypt
+        HTTPS &amp; Let's Encrypt
       </a>
     </h1>
 
@@ -108,9 +128,11 @@
 
 <p>You may be asking why is this so important? Why is a free CA something to write about? Most internet users know that they should check for the green padlock when logging into a secure site (e.g. banking, e-commerce), this means that the site has a SSL certificate so any information you send to their servers is encrypted and no one should be able to read that information except the intended recipients. Having HTTPS is so important these days that Google even takes it into consideration when ranking search results, it should be done by default. However SSL certificates cost hundreds if not thousands a year, the thousands is for when the company name is shown in the address bar of your browser (see below for an example). The fact that these normally cost so much puts them out of reach of individuals looking to secure their website.</p>
 
-<p>Therefore the work that Let&#39;s Encrypt is doing in bringing an automated free solution is so important for the web of tomorrow and truly allows HTTPS to be the default when setting up a website. This is especially true when service providers are integrating the Let&#39;s Encrypt solution into their platforms, for example Netifly and Heroku? have already done this.</p>
+<p><img src="/img/https-browser-bar.png" alt="HTTPS in Browser Bar" title="HTTPS in Browser Bar"></p>
 
-<p>If you have your own site and are looking to get https added, check out the Let&#39;s Encrypt documentation <a href="https://dsjk">here</a> or send <a href="https://dmn">this</a> information to your service provider asking them when they intend to offer https for free.</p>
+<p>Therefore the work that Let&#39;s Encrypt is doing in bringing an automated free solution is so important for the web of tomorrow and truly allows HTTPS to be the default when setting up a website. This is especially true when service providers are integrating the Let&#39;s Encrypt solution into their platforms, for example <a href="https://www.netlify.com/">Netlify</a>, <a href="https://en.blog.wordpress.com/2016/04/08/https-everywhere-encryption-for-all-wordpress-com-sites/">Wordpress.com</a> and <a href="https://www.shopify.co.uk/blog/73511365-all-shopify-stores-now-use-ssl-encryption-everywhere">Shopify</a> have already done this.</p>
+
+<p>If you have your own site and are looking to get https added, check out the Let&#39;s Encrypt documentation <a href="https://letsencrypt.org/getting-started/">here</a> or send <a href="https://letsencrypt.org/">this</a> information to your service provider asking them when they intend to offer https for free.</p>
 
     #letsencrypt #httpseverywhere #security #ssl
   </div>
@@ -159,49 +181,6 @@
 <p>You can purchase it on <a href="http://www.amazon.co.uk/The-Phoenix-Project-Helping-Business-ebook/dp/B00AZRBLHO">Amazon</a> or it should be in any good bookstore.</p>
 
     #book #workflow #it #kanban
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2015/05/22/chatops/">
-        ChatOps
-      </a>
-    </h1>
-
-    <span class="post-date">22 May 2015</span>
-
-    <p>I have been loosely following this movement which originated out of this <a href="https://www.youtube.com/watch?v=NST3u-GjjFw">video</a> from Github, the general idea is that instant messaging becomes the central scene for all activity within a (tech) company. Ideally this instant messaging is hosted in a group setting with open/private rooms as well as one-to-one conversations.</p>
-
-<p>The key component is a chatbot, there are plenty out there to choose from, though Hubot is the most popular. This chatbot is a user to which listens for commands then will execute specific tasks. This could be getting metrics for a server to deploying the latest version of the code. The bot can also notify you of changes to the system (eg build failing, alert raised).</p>
-
-<p>So the key benefits which derive from this system:  </p>
-
-<ul>
-<li>All actions are in realtime</li>
-<li>All actions are in the context of the bigger conversation going on, for example a production incident happens in an open channel, everyone can see the who is doing what, reducing any confusion that might occur</li>
-<li>It allows non-experts of particular system perform complex tasks, as they have been encoded into an easy to use format. They would also be safe to use as the experts has set the bounds of what can be executed. You could potentially get to the point that the users (within the company) could restart troublesome applications (not that you would necessarily want that but it is an option)</li>
-<li>Mobile compatible, most hosted solutions have apps for iPhone &amp; Android.</li>
-<li>Greater flexibility<br></li>
-<li>Greater laughs &amp; sense of community, not all commands need a serious purpose, hubot comes out of the box with the ability to search youtube, gifs images &amp; pugs</li>
-</ul>
-
-<p>Some videos about ChatOps:</p>
-
-<ul>
-<li><a href="https://www.youtube.com/watch?v=NST3u-GjjFw">ChatOps at GitHub</a></li>
-<li><a href="https://www.youtube.com/watch?v=IhzxnY7FIvg">ChatOps: Technology and Philosophy</a></li>
-</ul>
-
-<p>Available Chat bots:</p>
-
-<ul>
-<li><a href="https://hubot.github.com/">Hubot</a></li>
-<li><a href="https://github.com/gbin/err">Err</a></li>
-<li><a href="https://github.com/StackStorm/st2">StackStorm</a></li>
-<li><a href="https://www.lita.io/">Lita</a></li>
-</ul>
-
-    #ops #slack #bots #chat
   </div>
   
 </div>
