@@ -1,6 +1,6 @@
 # post ideas
 
-* Chat bots - design process.
+
 * Packer
 * Python?
 * Puppet?
