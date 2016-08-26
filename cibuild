@@ -1,4 +1,4 @@
-gem install jekyll html-proofer jekyll-paginate redcarpet pygments
+gem install jekyll html-proofer jekyll-paginate redcarpet pigments
 
 git checkout -b deploy-$TRAVIS_BRANCH
 
