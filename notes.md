@@ -10,6 +10,10 @@
 * donateback
 * graphic design work
 * bike
+* wedding website (React + zapier + nginx + jekyll)
+* Wired
+
+
 * thyme - time tracking - WIP
 
 * games (video, board)
