@@ -1,10 +1,10 @@
 # post ideas
 
 
-* Packer
+* Packer?
 * Python?
 * Puppet?
-* Books - question one
+* Books - question one, deep work, escape manifesto
 * podcasts (games, love your work, talking machines)
 * homelessness
 * donateback
@@ -12,7 +12,7 @@
 * bike
 * wedding website (React + zapier + nginx + jekyll)
 * Wired
-
+* Enki
 
 * thyme - time tracking - WIP
 
