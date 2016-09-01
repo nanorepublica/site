@@ -3,6 +3,7 @@
 
 * Packer?
 * Python?
+* Django
 * Puppet?
 * Books - question one, deep work, escape manifesto
 * podcasts (games, love your work, talking machines)
@@ -12,7 +13,7 @@
 * bike
 * wedding website (React + zapier + nginx + jekyll)
 * Wired
-* Enki
+* Sass providers I like/use
 
 * thyme - time tracking - WIP
 
