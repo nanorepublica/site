@@ -6,7 +6,9 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
-  {{ page.tags| join:' #'|prepend:'#' }}
+  {% for tag in page.tags %}
+    <a href="/{{ site.baseurl }}tag/{{ tag }}" >{{ tag|prepend:'#' }}</a>
+  {% endfor %}
 </div>
 
 <div class="related">
