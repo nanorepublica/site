@@ -11,7 +11,6 @@
 * donateback
 * graphic design work
 * bike
-* wedding website (React + zapier + nginx + jekyll)
 * Wired
 * Sass providers I like/use
 
