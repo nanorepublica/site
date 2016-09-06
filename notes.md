@@ -5,7 +5,7 @@
 * Python?
 * Django
 * Puppet?
-* Books - question one, deep work, escape manifesto
+* Books - question one, escape manifesto
 * podcasts (games, love your work, talking machines)
 * homelessness
 * donateback
