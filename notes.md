@@ -10,10 +10,14 @@
 * homelessness
 * donateback
 * graphic design work
-* bike
+* bike?
 * Wired
 * Sass providers I like/use
 
 * thyme - time tracking - WIP
 
 * games (video, board)
+
+
+* celery - tips & tricks
+* API limits
