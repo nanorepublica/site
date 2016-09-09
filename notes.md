@@ -5,19 +5,18 @@
 * Python?
 * Django
 * Puppet?
-* Books - question one, escape manifesto
-* podcasts (games, love your work, talking machines)
-* homelessness
-* donateback
-* graphic design work
-* bike?
-* Wired
 * Sass providers I like/use
-
 * thyme - time tracking - WIP
-
-* games (video, board)
-
-
 * celery - tips & tricks
 * API limits
+
+* Books - question one, escape manifesto
+* podcasts (games, love your work, talking machines)
+* Wired
+* games (video, board)
+
+* homelessness
+* donate-back
+
+* graphic design work - need photos...
+* bike?
