@@ -9,6 +9,7 @@
 * thyme - time tracking - WIP
 * celery - tips & tricks
 * API limits
+* Celery and memory issues
 
 * Books - question one, escape manifesto
 * podcasts (games, love your work, talking machines)
