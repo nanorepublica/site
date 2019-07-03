@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Portfolio
+notes: |-
+  Todo:
+
+  365 project - screenshots instead of live site.
 published: false
 
 ---
