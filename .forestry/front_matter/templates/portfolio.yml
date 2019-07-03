@@ -4,10 +4,22 @@ hide_body: false
 display_field: title
 fields:
 - type: text
-  name: layout
-  label: layout
-- type: text
   name: title
   label: title
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - page
+    - post
+    - default
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: layout
 pages:
 - portfolio.md
