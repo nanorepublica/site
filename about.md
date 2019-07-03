@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About
----
 
-Hi, I am Software Engineer/Developer currently working for Founders4Schools.
+---
+### Welcome!
+
+I am software engineer, creative, maker, dad, Christian based in the lovely town of Cambridge, UK.
 
 However, I am always open to new opportunities in small to medium sized companies in the Cambridge area. Ideally these are not related to finance or hedge-funds, but offer the prospect to tackle interesting problems giving me the opportunity to expand my skill set while benefiting society along the way.
 
 I have a keen interest in artificial intelligence/multi-agent systems, computer vision, machine learning, robotics & UI/UX.
 
 Day-to-day I mainly use Python in particular the Django web framework, Bash & Javascript/HTML/CSS but I am always open to trying new languages & tools hence I am currently teaching myself Java/Android. I do have a fairly deep knowledge of Puppet as well as some experience with Ruby and C/C++
-
 
 ## Qualifications
 
@@ -24,7 +25,6 @@ I have taken a series of other courses either as part of my work or for my own i
 * Internal Web Security Course
 
 Finally for my A levels I gained 2 A's in Mathematics and Physics and 2 B's in Further Mathematics and Computing
-
 
 ## Experience
 
@@ -45,7 +45,6 @@ In my spare time I enjoy playing video games, board games, watching films, occas
 I am also interested in graphic design, keeping up with the latest technology & open source software, photography, and robotics.
 
 I also enjoy cycling, skiing & rock climbing as well as having achieved grade 5 in the clarinet.
-
 
 <p class="message" style="text-align:center;">
 If your interested, you can download my CV <a href="{{ site.cv }}">here</a>
