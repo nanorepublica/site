@@ -8,6 +8,7 @@ notes: |-
 published: false
 
 ---
+
 ### Breathe Conference (The C3 Church)
 
 ### The C3 Church
@@ -17,3 +18,7 @@ published: false
 ### My Little Yellow Book
 
 ### Ride Clean
+
+\[www.rideclean.cc\](www.rideclean.cc)
+
+I consulted on the design and build of rideclean's site advising the founder
