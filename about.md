@@ -1,11 +1,13 @@
 ---
 layout: page
 title: About
+notes: |-
+  my why - I use technology to empower others.
+  tagline: using technology to empower others
+published: false
 
 ---
-### Welcome!
-
-I am software engineer, creative, maker, dad, Christian based in the lovely town of Cambridge, UK.
+\###
 
 However, I am always open to new opportunities in small to medium sized companies in the Cambridge area. Ideally these are not related to finance or hedge-funds, but offer the prospect to tackle interesting problems giving me the opportunity to expand my skill set while benefiting society along the way.
 
