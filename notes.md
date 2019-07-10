@@ -5,7 +5,7 @@
 * Python?
 * Django
 * Puppet?
-* Sass providers I like/use
+* Saas providers I like/use
 * thyme - time tracking - WIP
 * celery - tips & tricks
 * API limits
