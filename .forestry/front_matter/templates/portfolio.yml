@@ -33,6 +33,14 @@ fields:
     schema:
       format: markdown
   label: Notes
+- name: pagination
+  type: field_group
+  config: {}
+  fields:
+  - name: enabled
+    type: boolean
+    label: enabled
+  label: Pagination
 pages:
 - index.html
 - blog.md
