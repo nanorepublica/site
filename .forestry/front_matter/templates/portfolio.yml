@@ -17,6 +17,7 @@ fields:
     - page
     - post
     - default
+    - list
     source:
       type: simple
       section: 
