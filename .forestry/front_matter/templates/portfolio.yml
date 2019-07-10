@@ -41,6 +41,11 @@ fields:
     type: boolean
     label: enabled
   label: Pagination
+- name: menus
+  type: text
+  config:
+    required: false
+  label: Menu
 pages:
 - index.html
 - blog.md
