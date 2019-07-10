@@ -34,5 +34,6 @@ fields:
       format: markdown
   label: Notes
 pages:
+- blog.md
 - about.md
 - portfolio.md
