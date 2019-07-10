@@ -41,6 +41,19 @@ fields:
     type: boolean
     label: enabled
   label: Pagination
+- name: menus
+  type: select
+  default: sidebar
+  config:
+    required: false
+    options:
+    - sidebar
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Menus
 pages:
 - index.html
 - blog.md
