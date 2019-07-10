@@ -12,6 +12,7 @@ ruby RUBY_VERSION
 gem "jekyll"
 gem 'jekyll-sitemap'
 gem "jekyll-paginate"
+gem 'jekyll-menus', '~> 0.6.0'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "jekyll-theme-hyde", "2.0.0"

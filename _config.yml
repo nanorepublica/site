@@ -32,4 +32,4 @@ rss: /atom.xml
 
 exclude: [old, notes.md]
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-menus]
