@@ -5,10 +5,12 @@ notes: |-
   Todo:
 
   365 project - screenshots instead of live site.
+pagination:
+  enabled: false
+menus: ''
 menu:
   sidebar:
     weight: 3
-published: false
 
 ---
 ### Breathe Conference (The C3 Church)
