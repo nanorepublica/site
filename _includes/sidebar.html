@@ -6,24 +6,12 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
-        <a href="/">Home</a>
-      </li>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-              <a href="{{ node.url }}">{{ node.title }}</a>
-            </li>
-          {% endif %}
-        {% endif %}
+      {% for item in site.menus.sidebar %}
+        {% unless item.url contains '/blog/' and item.identifier == 'html' %}
+          <li class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}">
+            <a href="{{ item.url | replace:'index.html', '' }}">{{ item.title }}</a>
+          </li>
+        {% endunless %}
       {% endfor %}
 
       <!-- <li class="sidebar-nav-item"><a href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a></li> -->
@@ -34,8 +22,6 @@
           <a href="{{ site.cv }}" >CV</a>&nbsp;
           <a href="{{ site.rss }}" class="fa fa-rss"></a>&nbsp;
       </li>
-
-      <!-- <li class="sidebar-nav-item">Currently v{{ site.version }}</li> -->
     </ul>
 
     <p style="line-height:1;">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</br>
