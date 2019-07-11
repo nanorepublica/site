@@ -6,7 +6,7 @@
     </div>
 
     <ul class="sidebar-nav">
-      {% for item in site.menus.sidebar %}
+      {% for item in site.menus.sidebar | uniq %}
         {% unless item.url contains '/blog/' and item.identifier == 'html' %}
           <li class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}">
             <a href="{{ item.url | replace:'index.html', '' }}">{{ item.title }}</a>
