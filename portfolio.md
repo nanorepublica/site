@@ -11,6 +11,7 @@ menus: ''
 menu:
   sidebar:
     weight: 3
+published: false
 
 ---
 ### Breathe Conference (The C3 Church)
