@@ -1,3 +1,7 @@
+---
+published: false
+
+---
 # My site
 
 This is the code for my website, based of Jekyll, see below for more details on that.
