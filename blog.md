@@ -6,6 +6,6 @@ pagination:
   enabled: true
 menu:
   sidebar:
-    weight: 1
+    weight: 2
 
 ---
