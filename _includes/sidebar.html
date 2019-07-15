@@ -6,15 +6,13 @@
     </div>
 
     <ul class="sidebar-nav">
-      {% for item in site.menus.sidebar | uniq %}
-        {% unless item.url contains '/blog/' and item.identifier == 'html' %}
-          <li class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}">
-            <a href="{{ item.url | replace:'index.html', '' }}">{{ item.title }}</a>
-          </li>
-        {% endunless %}
+      {% assign sidebar = site.menus.sidebar.menu | uniq %}
+      {% for item in sidebar %}
+        <li class="sidebar-nav-item{% if page.menu.sidebar.url == item.url %} active{% endif %}">
+          <a href="{{ item.url | replace: 'index.html' '' }}">{{ item.title }}</a>
+        </li>
       {% endfor %}
 
-      <!-- <li class="sidebar-nav-item"><a href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a></li> -->
       <li class="sidebar-nav-item">
           <a href="{{ site.linkedin }}" class="fa fa-linkedin"></a>&nbsp;
           <a href="{{ site.github }}" class="fa fa-github"></a>&nbsp;
@@ -26,5 +24,6 @@
 
     <p style="line-height:1;">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</br>
     <small>Disclaimer: All expressions of thought are mine and are bare no relation to anyone I maybe associated with.</small></p>
+
   </div>
 </div>
