@@ -6,10 +6,12 @@
     </div>
 
     <ul class="sidebar-nav">
-      {% assign sidebar = site.menus.sidebar.menu | uniq %}
+
+      {% assign sidebar = site.menus.sidebar.menu | map:"url" | uniq %}
+      {% assign sidebar_title = site.menus.sidebar.menu | map:"title" | uniq %}
       {% for item in sidebar %}
-        <li class="sidebar-nav-item{% if page.menu.sidebar.url == item.url %} active{% endif %}">
-          <a href="{{ item.url | replace: 'index.html' '' }}">{{ item.title }}</a>
+        <li class="sidebar-nav-item{% if page.menu.sidebar.url == item %} active{% endif %}">
+          <a href="{{ item | replace: 'index.html' '' }}">{{ sidebar_title[forloop.index0] }}</a>
         </li>
       {% endfor %}
 
