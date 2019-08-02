@@ -12,7 +12,7 @@ menu:
 ---
 Need a website or something more for your next idea, cause or charity?
 
-Get in touch here: [needawebsite@akmiller.co.uk](mailto:needawebsite@akmiller.co.uk) or <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142'});return false;">book in a meeting with me</a>.
+Get in touch here: [needawebsite@akmiller.co.uk](mailto:needawebsite@akmiller.co.uk) or <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142'});return false;">book in a time</a> to meet me in person.
 
 I am also available for part time contracting in Cambridge, UK or to work remotely. Check out my CV [here](/public/CV.pdf "CV") and then drop me a line here: [needacontractor@akmiller.co.uk](mailto:needacontractor@akmiller.co.uk)
 
