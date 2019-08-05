@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Work with me
 notes: ''
 pagination:
   enabled: false
