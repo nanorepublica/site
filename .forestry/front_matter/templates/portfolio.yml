@@ -55,8 +55,8 @@ fields:
       path: 
   label: Menus
 pages:
-- contact.md
 - index.html
+- contact.md
 - 404.html
 - blog.md
 - about.md
