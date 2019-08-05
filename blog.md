@@ -1,9 +1,10 @@
 ---
 layout: list
-title: Blog
+title: blog
 notes: ''
 pagination:
   enabled: true
+menus: ''
 menu:
   sidebar:
     weight: 2
