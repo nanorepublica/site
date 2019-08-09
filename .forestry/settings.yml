@@ -10,6 +10,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
+  templates:
+  - portfolio-item
 - type: jekyll-pages
   label: Pages
   create: all
