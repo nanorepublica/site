@@ -11,13 +11,6 @@ fields:
 - type: textarea
   name: notes
   label: notes
-- type: field_group
-  name: pagination
-  label: pagination
-  fields:
-  - type: boolean
-    name: enabled
-    label: enabled
 - type: list
   name: items
   label: items
