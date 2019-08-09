@@ -18,6 +18,7 @@ fields:
     - post
     - default
     - list
+    - horizontal-list
     source:
       type: simple
       section: 
