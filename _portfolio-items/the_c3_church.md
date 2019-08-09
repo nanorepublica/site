@@ -1,6 +1,8 @@
 ---
 title: The C3 Church
+
 ---
+[thec3.uk](https://www.thec3.uk)
 
 ![thec3.uk](/uploads/2019/08/09/thec3uk.png)
 
