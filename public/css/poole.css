@@ -404,3 +404,17 @@ a.pagination-item:hover {
 .horizontal .post img {
   width: 100%;
 }
+
+/* need to do mobile */
+.horizontal {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 80vh;
+  height: 70vw;
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-80vh);
+}
+
+.horizontal-item {
+  transform: rotate(90deg);
+}
