@@ -57,6 +57,6 @@ twitter: https://twitter.com/nanorepublica
 cv: /public/CV.pdf
 rss: /atom.xml
 
-exclude: [old, notes.md]
+exclude: [old, notes.md, vendor]
 
 plugins: [jekyll-paginate-v2, jekyll-menus]
