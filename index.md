@@ -22,10 +22,10 @@ notes: |
   * Alumah
 pagination:
   enabled: false
-menus: sidebar
+items:
+- _portfolio-items/the_c3_church.md
 menu:
+  sidebar: {}
   '': {}
-  sidebar:
-    weight: 1
 
 ---
