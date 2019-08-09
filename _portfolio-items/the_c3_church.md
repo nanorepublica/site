@@ -1,9 +1,7 @@
 ---
-title: The C3 Church
-link: https://www.thec3.uk
 ---
 
-## [The C3 Church]()
+## [The C3 Church](https://www.thec3.uk)
 
 ![thec3.uk](/uploads/2019/08/09/thec3uk.png)
 
