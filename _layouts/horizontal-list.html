@@ -10,6 +10,9 @@ layout: default
       {% for item in site.portfolio-items %}
         <div class="horizontal-item">
           <h2>{{ item.title }}</h2>
+          {% if item.link %}
+          <a href="{{ item.link }}">{{ item.link }}</a>
+          {% endif %}
           {{ item.content }}
         </div>
       {% endfor %}
