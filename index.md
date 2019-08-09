@@ -22,7 +22,9 @@ notes: |
   * Alumah
 pagination:
   enabled: false
-items: []
+items:
+- _portfolio-items/ride-clean.md
+- _portfolio-items/the_c3_church.md
 menu:
   '': {}
   sidebar: {}
