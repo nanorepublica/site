@@ -417,4 +417,9 @@ a.pagination-item:hover {
 
 .horizontal-item {
   transform: rotate(90deg);
+  padding: 15px;
+}
+
+.horizontal .horizontal-item:last-child {
+  margin-bottom: 100px;
 }
