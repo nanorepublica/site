@@ -7,7 +7,11 @@
 
     {% include sidebar.html %}
 
+    {% if page.layout == "horizontal-list" %}
+    <div class="content container" style="height:100vh;">
+    {% else %}
     <div class="content container">
+    {% endif %}
       {{ content }}
     </div>
 
