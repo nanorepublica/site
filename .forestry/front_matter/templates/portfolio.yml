@@ -14,5 +14,10 @@ fields:
 - type: list
   name: items
   label: items
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: portfolio-items
 pages:
 - index.md
