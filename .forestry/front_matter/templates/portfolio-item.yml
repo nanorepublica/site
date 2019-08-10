@@ -6,4 +6,5 @@ fields:
   name: title
   label: title
 pages:
+- _portfolio-items/dg-financial.md
 - _portfolio-items/ride-clean.md
