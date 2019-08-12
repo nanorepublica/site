@@ -410,10 +410,10 @@ a.pagination-item:hover {
   overflow-y: auto;
   overflow-x: hidden;
   width: 80vh;
-  height: 70vw;
+  height: 71vw;
   transform-origin: right top;
   transform: rotate(-90deg) translateY(-85.1vh);
-  padding-top: 46.2vw;
+  padding-top: 45.8vw;
 }
 
 .horizontal-item {
@@ -421,7 +421,3 @@ a.pagination-item:hover {
   padding: 10px 20px;
   transform-origin: top right;
 }
-
-/* .horizontal .horizontal-item:last-child {
-  margin-bottom: 100px;
-} */

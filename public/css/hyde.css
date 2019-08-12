@@ -158,6 +158,7 @@ a.sidebar-nav-item:focus {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
+    box-shadow: -1px 0px 20px 10px #fff;
   }
   .layout-reverse .content {
     margin-left: 2rem;
@@ -169,6 +170,7 @@ a.sidebar-nav-item:focus {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
+    box-shadow: -1px 0px 20px 10px #fff;
   }
 }
 
