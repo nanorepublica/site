@@ -1,11 +1,12 @@
 ---
 layout: page
 title: work with me
-notes: ''
+notes: Add pricing packages here, once I have worked them out.
 pagination:
   enabled: false
 menus: ''
 menu:
+  '': {}
   sidebar:
     weight: 3
 
