@@ -6,9 +6,9 @@ fields:
   name: title
   label: title
 pages:
+- _portfolio-items/my-little-yellow-book.md
 - _portfolio-items/dg-financial.md
 - _portfolio-items/hollyandandrew-co-uk.md
 - _portfolio-items/breathe-conference.md
-- _portfolio-items/my-little-yellow-book.md
 - _portfolio-items/alumah.md
 - _portfolio-items/ride-clean.md
