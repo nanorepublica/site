@@ -412,7 +412,7 @@ a.pagination-item:hover {
   width: 80vh;
   height: 70vw;
   transform-origin: right top;
-  transform: rotate(-90deg) translateY(-80vh);
+  transform: rotate(-90deg) translateY(-85.1vh);
 }
 
 .horizontal-item {
