@@ -1,8 +1,9 @@
 ---
 title: Ride Clean
+link: ''
 
 ---
-[rideclean.cc](rideclean.cc)
+[rideclean.cc](https://www.rideclean.cc)
 
 ![](/uploads/2019/08/09/ridecleancc.png)
 
