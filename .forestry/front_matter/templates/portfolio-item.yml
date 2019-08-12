@@ -5,6 +5,11 @@ fields:
 - type: text
   name: title
   label: title
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
 pages:
 - _portfolio-items/breathe-conference.md
 - _portfolio-items/ride-clean.md
