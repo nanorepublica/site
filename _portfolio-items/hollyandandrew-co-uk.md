@@ -1,5 +1,5 @@
 ---
-title: 'Side project: hollyandandrew.co.uk'
+title: hollyandandrew.co.uk
 link: ''
 
 ---
