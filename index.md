@@ -9,8 +9,8 @@ notes: |2-
 pagination:
   enabled: false
 items:
-- _portfolio-items/ride-clean.md
 - _portfolio-items/the_c3_church.md
+- _portfolio-items/ride-clean.md
 - _portfolio-items/my-little-yellow-book.md
 - _portfolio-items/hollyandandrew-co-uk.md
 menu:
