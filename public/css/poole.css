@@ -413,15 +413,15 @@ a.pagination-item:hover {
   height: 70vw;
   transform-origin: right top;
   transform: rotate(-90deg) translateY(-85.1vh);
-  padding-top: 70vw;
+  padding-top: 46.2vw;
 }
 
 .horizontal-item {
   transform: rotate(90deg);
-  padding: 15px;
+  padding: 10px 20px;
   transform-origin: top right;
 }
 
-.horizontal .horizontal-item:last-child {
+/* .horizontal .horizontal-item:last-child {
   margin-bottom: 100px;
-}
+} */
