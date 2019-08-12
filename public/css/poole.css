@@ -409,8 +409,8 @@ a.pagination-item:hover {
 .horizontal {
   overflow-y: auto;
   overflow-x: hidden;
-  width: 100vh;
-  height: 71vw;
+  width: 80vh;
+  height: 100vw;
   transform-origin: right top;
   transform: rotate(-90deg) translateY(-85.1vh);
   padding-top: 21px;
@@ -425,6 +425,6 @@ a.pagination-item:hover {
 
 @media (min-width: 48rem) {
     .horizontal {
-        width: 80vh;
+        height: 71vw;
     }
 }
