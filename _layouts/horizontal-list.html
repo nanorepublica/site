@@ -7,13 +7,14 @@ layout: default
       {{ page.title }}
     </h1>
     <div class="horizontal posts">
-      {% for item in site.portfolio-items %}
+      {% for path in page.items %}
+        {% assign item = site.portfolio-items | where:"relative_path", path %}
         <div class="horizontal-item">
-          <h2>{{ item.title }}</h2>
-          {% if item.link %}
-          <a href="{{ item.link }}">{{ item.link }}</a>
+          <h2>{{ item[0].title }}</h2>
+          {% if item[0].link %}
+          <a href="{{ item[0].link }}">{{ item[0].link }}</a>
           {% endif %}
-          {{ item.content }}
+          {{ item[0].content }}
         </div>
       {% endfor %}
     </div>
