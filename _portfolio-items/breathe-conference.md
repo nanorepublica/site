@@ -7,4 +7,6 @@ published: false
 
 ![](/uploads/2019/08/12/breathethec3.png)
 
+Technologies used: Jekyll, HTML, CSS, Javascript, Netlify
+
 Created and maintained the website for Breathe Conference run by the C3 Church from 2017 to 2020, working in each year theme into the website.
