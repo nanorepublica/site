@@ -8,4 +8,4 @@ title: The C3 Church
 
 Migrated the front end site from a legacy server based system to the latest technologies while maintaining the current design. In doing so improved the performance of the site and the usability of the content management system by using a third party CMS.
 
-Technologies used: GatsbyJS, ReactJS, HTML, CSS Modules, Netlify, Mailchimp, Prismic.io
+Technologies used: GatsbyJS, ReactJS, HTML, CSS, CSS Modules, Netlify, Mailchimp, Prismic.io
