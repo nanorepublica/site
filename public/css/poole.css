@@ -417,7 +417,7 @@ a.pagination-item:hover {
 }
 
 .horizontal-item {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(-80vh);
   padding: 10px 20px;
-  transform-origin: top right;
+  transform-origin: left top;
 }
