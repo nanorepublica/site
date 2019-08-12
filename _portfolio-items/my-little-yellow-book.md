@@ -7,3 +7,5 @@ title: My Little Yellow Book
 ![](/uploads/2019/08/12/mylittleyellowbook.png)
 
 I created and hosted a simple one page site for a friend to promote the journal they had created for children aged 7 - 11.
+
+Technologies used: HTML, CSS, Javascript, Netlify
