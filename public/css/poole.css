@@ -423,8 +423,21 @@ a.pagination-item:hover {
   transform-origin: left top;
 }
 
+.shadow {
+    box-shadow: inset 0px 0px 20px 10px #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
+
 @media (min-width: 48rem) {
     .horizontal {
         height: 71vw;
+    }
+    .shadow {
+        box-shadow: unset;
     }
 }
