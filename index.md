@@ -14,7 +14,9 @@ items:
 - _portfolio-items/my-little-yellow-book.md
 - _portfolio-items/hollyandandrew-co-uk.md
 menu:
-  '': {}
-  sidebar: {}
+  sidebar:
+    weight: 1
+  '':
+    weight: 1
 
 ---

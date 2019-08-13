@@ -14,6 +14,10 @@ notes: |-
 pagination:
   enabled: false
 menus: ''
+menu:
+  sidebar:
+    weight: 4
+    title: ''
 
 ---
 I am freelance web designer and software engineer specialising in full-stack development based in Cambridge, UK. I love building out ideas especially when they empower others to improve their quality of life.

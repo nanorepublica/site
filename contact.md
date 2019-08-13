@@ -4,9 +4,9 @@ title: work with me
 notes: Add pricing packages here, once I have worked them out.
 pagination:
   enabled: false
-menus: ''
 menu:
-  '': {}
+  '':
+    weight: 3
   sidebar:
     weight: 3
 
