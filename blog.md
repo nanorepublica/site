@@ -10,7 +10,7 @@ notes: "# post ideas\n\n* Packer?\n* Python?\n* Django\n* Puppet?\n* Saas provid
   VAT\n  - Corporation Tax\n  - tools I am using internally\n  - \n"
 pagination:
   enabled: true
-menus: sidebar
+menus: ''
 menu:
   '':
     weight: 2
