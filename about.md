@@ -13,7 +13,7 @@ notes: |-
   * Internal Web Security Course
 pagination:
   enabled: false
-menus: ''
+menus: sidebar
 menu:
   sidebar:
     weight: 4
