@@ -4,20 +4,28 @@ title: About
 notes: |-
   my why - I use technology to empower others.
   tagline: using technology to empower others
+pagination:
+  enabled: false
+menus: ''
 published: false
 
 ---
-\###
 
-However, I am always open to new opportunities in small to medium sized companies in the Cambridge area. Ideally these are not related to finance or hedge-funds, but offer the prospect to tackle interesting problems giving me the opportunity to expand my skill set while benefiting society along the way.
+I am freelance web designer and software engineer specialising in full-stack development based in Cambridge, UK. I love building out ideas especially when they empower others to improve their quality of life. 
+
+In my spare time I am involved in my local church, spending time with my new family, enjoying good food
+
+### Background
+
+I have a degree in Information Systems Engineering from Imperial College London, this was a mix of Electronic Engineering and Computer Science. 
+
+From there, I joined the Infrastructure Department within [Ocado Technology](http://www.ocadotechnology.com), skilled up on Python & Django by creating automations and tools for other developers to provision users and applications on the on-premise servers. I then transitioned to the newly created Cloud Services team to achieve similar goals within AWS accounts to help create the Ocado Smart Platform.
+
+The next step in my career was a move to the edtech startup [Founders4Schools](www.founders4schools.org.uk) which aims to improve the employability of young people by connecting them to local business volunteers. During my time at Founders4Schools we started to build the first
 
 I have a keen interest in artificial intelligence/multi-agent systems, computer vision, machine learning, robotics & UI/UX.
 
 Day-to-day I mainly use Python in particular the Django web framework, Bash & Javascript/HTML/CSS but I am always open to trying new languages & tools hence I am currently teaching myself Java/Android. I do have a fairly deep knowledge of Puppet as well as some experience with Ruby and C/C++
-
-## Qualifications
-
-At degree level, I graduated with a 2:1 from Imperial College London reading Information Systems Engineering MEng.
 
 I have taken a series of other courses either as part of my work or for my own interest:
 
@@ -25,8 +33,7 @@ I have taken a series of other courses either as part of my work or for my own i
 * online course in Functional Programming & Human Computer Interaction
 * Google's Cloud Qualified Developer course
 * Internal Web Security Course
-
-Finally for my A levels I gained 2 A's in Mathematics and Physics and 2 B's in Further Mathematics and Computing
+* The C3 Academy
 
 ## Experience
 

@@ -56,10 +56,10 @@ fields:
       path: 
   label: Menus
 pages:
+- about.md
 - terms-conditions.md
 - cookie-policy.md
 - privacy-policy.md
 - blog.md
 - contact.md
-- about.md
 - 404.html
