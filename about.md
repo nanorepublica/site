@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 notes: |-
   my why - I use technology to empower others.
   tagline: using technology to empower others
