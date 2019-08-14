@@ -405,7 +405,8 @@ a.pagination-item:hover {
   width: 80%;
 }
 
-/* need to do mobile */
+
+
 .horizontal {
   overflow-y: auto;
   overflow-x: hidden;
@@ -420,13 +421,24 @@ a.pagination-item:hover {
 .horizontal-item {
   transform: rotate(90deg) translateY(-80vh);
   padding: 10px 20px;
+  padding-right: 40px;
   transform-origin: left top;
+  display: flex;
+  flex-direction: column;
+
 }
 
 @media (min-width: 48rem) {
     .horizontal {
         height: 71vw;
         width: 80vh;
-
+    }
+    .horizontal-item {
+      display: block;
+      padding-right: 20px;
+    }
+    .horizontal-item p {
+      width: 33vw;
+      font-size: 0.9rem;
     }
 }
