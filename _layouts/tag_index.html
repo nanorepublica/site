@@ -17,7 +17,7 @@ layout: default
           <span class="post-date">{{ post.date | date_to_string }}</span>
 
           {{ post.excerpt| remove: '</p>' | append:'<a href="'| append: post.url| append:'">Read on...</a></p>' }}
-          
+
           <p>
           {% for tag in post.tags %}
             <a href="/{{ site.baseurl }}tag/{{ tag }}">{{ tag|prepend:'#' }}</a>
