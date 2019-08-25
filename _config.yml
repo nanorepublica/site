@@ -6,8 +6,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Andrew Miller
-# tagline:          'What do you see?'
+title:            Software Crafts
+tagline:          'using technology to empower others'
 description:      'I use technology to empower others. Get in touch to see how I can help you.'
 url:              https://akmiller.co.uk/
 

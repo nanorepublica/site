@@ -24,7 +24,6 @@
  * Themes
  */
 
-
 /*
  * Global resets
  *
@@ -32,7 +31,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48rem) {
   html {
@@ -56,7 +55,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: var(--lightColorTransparent);
   background-color: #202020;
   z-index: 10;
 }
@@ -67,20 +66,20 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;
+    text-align: right;
   }
 }
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: var(--lightColor);
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #fff;
+  color: var(--lightColor);
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: aglet-slab, sans-serif;
   font-size: 3.25rem;
 }
 
@@ -102,7 +101,7 @@ a.sidebar-nav-item:focus {
 
 .sidebar-nav-item > a:hover {
   text-decoration: none;
-  color:#000;
+  color: var(--darkColor);
 }
 
 /* Sticky sidebar
@@ -158,7 +157,7 @@ a.sidebar-nav-item:focus {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
-    box-shadow: -1px 0px 20px 10px #fff;
+    box-shadow: -1px 0px 20px 10px var(--lightColor);
   }
   .layout-reverse .content {
     margin-left: 2rem;
@@ -170,7 +169,7 @@ a.sidebar-nav-item:focus {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
-    box-shadow: -1px 0px 20px 10px #fff;
+    box-shadow: -1px 0px 20px 10px var(--lightColor);
   }
 }
 
@@ -187,11 +186,11 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #ac4142;
+  background-color: var(--redColor);
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+  color: var(--redColor);
 }
 
 /* Orange */

@@ -27,7 +27,14 @@
  * Reverse layout
  * Themes
  */
-
+ :root {
+     --redColor: #c05850;
+     --darkColor: #3a353f;
+     --greyColor: #505668;
+     --lightColor: #f1ece1;
+     --lightColorTransparent: #f1ece180;
+     --orangeColor: #e2ab7f;
+ }
 
 /*
  * Body resets
@@ -59,8 +66,8 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  color: var(--greyColor);
+  background-color: var(--lightColor);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -79,10 +86,12 @@ a:focus {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: var(--darkColor);
   text-rendering: optimizeLegibility;
+  font-family: aglet-slab, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 h1 {
   font-size: 2rem;
@@ -107,7 +116,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: var(--darkColor);
 }
 
 
@@ -361,7 +370,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -403,6 +412,7 @@ a.pagination-item:hover {
 
 .horizontal .horizontal-item img {
   width: 80%;
+  border: solid 1px;
 }
 
 
@@ -425,7 +435,7 @@ a.pagination-item:hover {
   transform-origin: left top;
   display: flex;
   flex-direction: column;
-
+  text-align: justify;
 }
 
 @media (min-width: 48rem) {
@@ -441,4 +451,23 @@ a.pagination-item:hover {
       width: 33vw;
       font-size: 0.9rem;
     }
+    .horizontal-item blockquote p {
+      width: 25vw;
+    }
+}
+
+@font-face {
+    font-family: Playlist;
+    src: url("./Playlist Script.otf") format("opentype");
+}
+
+.h1alt,
+.h2alt,
+.h3alt {
+  font-family: Playlist, serif;
+  color: var(--darkColor)
+}
+
+.sidebar h1 a:hover {
+  text-decoration: none
 }
