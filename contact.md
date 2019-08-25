@@ -10,6 +10,7 @@ menu:
     weight: 3
   sidebar:
     weight: 3
+published: false
 
 ---
 Got an idea, cause or charity?  
@@ -21,21 +22,23 @@ I am also available for part time contracting in Cambridge, UK or to work remote
 
 ## Packages
 
-With every client I look to understand their mission, vision and values
+With every client I look to understand their mission, vision and values; essentially their reason for existing. I do this to craft & create a digital presence that matches you.
 
 ### Squarespace Website
 
-This package will provide a complete production ready website. This includes 4 pages by default and will match your brand
+This package will provide a complete production ready website. This includes 4 pages by default that will match your existing brand. Extra pages are priced at £150 per page.
 
 Prices start at £1000
 
 ### Brand Design
 
+2 logos (& inverse options), 2 patterns, submark, images for social media, business cards (moo.com), 
+
 Prices start at £1500
 
-### Squarespace Website and Brand Design
+### Brand Design and Squarespace Website
 
-This is the full works. I will build out
+This is the full works, a combination of both of the above packages, the ideal thing to get your business online.
 
 Prices start at £2500
 
@@ -43,7 +46,7 @@ Prices start at £2500
 
 Need something not covered by the above? Book in a <a href="" onclick="Calendly.initPopupWidget({url: '[https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142](https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142 "https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142")'});return false;">meeting with me</a> to discuss your requirements.
 
-Standard rates for custom requests are £450 per day and £60 per hour. I am open to negotiation for the right project. 
+Standard rates for custom requests are £450 per day and £60 per hour. I am open to negotiation for the right project.
 
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
