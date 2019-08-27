@@ -13,7 +13,7 @@ notes: |-
   * Internal Web Security Course
 pagination:
   enabled: false
-menus: sidebar
+menus: ''
 menu:
   sidebar:
     weight: 4
@@ -33,6 +33,6 @@ The next step in my career was a move to the edtech startup [Founders4Schools](w
 
 Just before joining Founders4Schools, I rediscovered my faith and through participating in an Alpha course, I started to attend my local church called [C3](https://www.thec3.uk). During 2017/18 I attended the C3 leadership academy which is for anyone who wants to improve their leadership skills from Biblical foundation.  Additionally during this time I was invited to join the Creative Core team at C3. From this, I started to redevelop the website using [GatsbyJS](https://www.gatsbyjs.org/) and helped improve the internal IT tooling used by the staff.
 
-Recently, I have started my own company to offer my services as a freelancer or on a contract basis. Do [get in touch](/contact "Work with me") if you think I can help you with your digital needs. When I am not doing client work, I am interested in skilling up in UI/UX design, graphic design, photography and the latest open source software, technologies & tools.
+Recently, I have started my own company to offer my services as a freelancer or on a contract basis. [Get in touch](/contact "Work with me") if you think I can help you with your digital needs. When I am not doing client work, I am interested in skilling up in UI/UX design, graphic design, photography and the latest open source software, technologies & tools.
 
 <p class="message" style="text-align:center;"> If your interested in working with me, get in touch <a href="/contact">here</a> </p>
