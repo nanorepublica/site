@@ -18,7 +18,7 @@ Need a website? or something more complex?
 
 Get in touch: [needawebsite@akmiller.co.uk](mailto:needawebsite@akmiller.co.uk) or book in a time to <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142'});return false;">meet me in person</a>.
 
-I am also available for part time contracting in Cambridge, UK or to work remotely. Check out my CV [here](/public/CV.pdf "CV") and then drop me a line here: [needacontractor@akmiller.co.uk](mailto:needacontractor@akmiller.co.uk)
+I am also available for part time software contracting in Cambridge, UK or available remotely. Check out my [CV](/public/CV.pdf) and drop me a line here: [needacontractor@akmiller.co.uk](mailto:needacontractor@akmiller.co.uk)
 
 ## Packages
 
@@ -48,7 +48,7 @@ Prices start at £2500
 
 Need something not covered by the above? Book in a <a href="" onclick="Calendly.initPopupWidget({url: '[https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142](https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142 "https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142")'});return false;">meeting with me</a> or drop me an [email](mailto:input@softwarecrafts.uk) to discuss your requirements and see how I can help you.
 
-Standard rates for custom requests are £450 per day and £60 per hour. I am, however, open to negotiation on these rates for the right projects. 
+Standard rates for custom requests are £450 per day and £60 per hour. I am, however, open to negotiation on these rates for the right projects.
 
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
