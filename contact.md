@@ -32,7 +32,7 @@ Prices start at £1000
 
 ### Brand Design
 
-2 logos (& inverse options), 2 patterns, submark, images for social media, business cards (moo.com), 
+2 logos (& inverse options), 2 patterns, submark, images for social media, business cards (moo.com),
 
 Prices start at £1500
 
@@ -46,7 +46,7 @@ Prices start at £2500
 
 Need something not covered by the above? Book in a <a href="" onclick="Calendly.initPopupWidget({url: '[https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142](https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142 "https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142")'});return false;">meeting with me</a> to discuss your requirements.
 
-Standard rates for custom requests are £450 per day and £60 per hour. I am open to negotiation for the right project.
+Standard rates for custom requests are £450 per day and £60 per hour. I am open to negotiation for the right projects. Drop me an [email](mailto:input@softwarecrafts.uk) or book in a meeting with me.
 
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
