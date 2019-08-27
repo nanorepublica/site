@@ -19,7 +19,7 @@ menu:
     weight: 4
 
 ---
-I am freelance web designer and software engineer specialising in full-stack development based in Cambridge, UK. I love building out ideas especially when they empower others to improve their quality of life.
+I am a freelance web designer and software engineer specialising in full-stack development based in Cambridge, UK. I love building out ideas especially when they empower others to improve their quality of life.
 
 In my spare time I am involved in my local church, I play with my one year old, enjoy good food and drink, I read, I listen to podcasts and enjoy playing games of the board and electronic variety. I also enjoy skiing, climbing and cycling.
 
