@@ -44,9 +44,9 @@ Prices start at £2500
 
 ### Custom Request
 
-Need something not covered by the above? Book in a <a href="" onclick="Calendly.initPopupWidget({url: '[https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142](https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142 "https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142")'});return false;">meeting with me</a> to discuss your requirements.
+Need something not covered by the above? Book in a <a href="" onclick="Calendly.initPopupWidget({url: '[https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142](https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142 "https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142")'});return false;">meeting with me</a> or drop me an [email](mailto:input@softwarecrafts.uk) to discuss your requirements and see how I can help you.
 
-Standard rates for custom requests are £450 per day and £60 per hour. I am open to negotiation for the right projects. Drop me an [email](mailto:input@softwarecrafts.uk) or book in a meeting with me.
+Standard rates for custom requests are £450 per day and £60 per hour. I am, however, open to negotiation on these rates for the right projects. 
 
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
