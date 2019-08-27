@@ -32,6 +32,8 @@ Prices start at £1000
 
 ### Brand Design
 
+With this package, we will work with you to craft your new brand
+
 2 logos (& inverse options), 2 patterns, submark, images for social media, business cards (moo.com),
 
 Prices start at £1500
