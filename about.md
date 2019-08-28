@@ -35,4 +35,4 @@ Just before joining Founders4Schools, I rediscovered my faith and through partic
 
 Recently, I have started my own company to offer my services as a freelancer or on a contract basis. [Get in touch](/contact "Work with me") if you think I can help you with your digital needs. When I am not doing client work, I am interested in skilling up in UI/UX design, graphic design, photography and the latest open source software, technologies & tools.
 
-<p class="message" style="text-align:center;"> If your interested in working with me, get in touch <a href="/contact">here</a> </p>
+<p class="message" style="text-align:center;"> If you're interested in working with me, get in touch <a href="/contact">here</a> </p>

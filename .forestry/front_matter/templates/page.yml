@@ -56,8 +56,8 @@ fields:
       path: 
   label: Menus
 pages:
-- contact.md
 - about.md
+- contact.md
 - blog.md
 - terms-conditions.md
 - cookie-policy.md
