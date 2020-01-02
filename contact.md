@@ -1,7 +1,7 @@
 ---
 layout: page
 title: work with me
-notes: Add pricing packages here, once I have worked them out.
+notes: ''
 pagination:
   enabled: false
 menus: ''
