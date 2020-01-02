@@ -13,7 +13,7 @@ menu:
 
 ---
 Got an idea, cause or charity?  
-Need a website? or something more complex?
+Need a website or something more complex?
 
 Get in touch: [needawebsite@akmiller.co.uk](mailto:needawebsite@akmiller.co.uk) or book in a time to <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akmiller-co-uk/30min?primary_color=ac4142'});return false;">meet me in person</a>.
 
