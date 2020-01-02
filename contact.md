@@ -10,7 +10,6 @@ menu:
     weight: 3
   sidebar:
     weight: 3
-published: false
 
 ---
 Got an idea, cause or charity?  
