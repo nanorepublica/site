@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A new season awaits...
+title: a new season awaits...
 tags:
 - contracting
 - business
