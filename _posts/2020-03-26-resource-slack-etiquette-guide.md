@@ -1,6 +1,6 @@
 ---
 layout: post
-title: resource - Slack Etiquette Guide
+title: 'resource: Slack Etiquette Guide'
 tags:
 - guide
 - messaging
