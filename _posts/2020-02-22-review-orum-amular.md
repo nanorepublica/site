@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Review: Oron Amular - The Call of the Mountain'
+title: 'review: Oron Amular - The Call of the Mountain'
 tags:
 - fantasy
 - review
