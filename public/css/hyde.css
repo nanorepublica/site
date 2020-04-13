@@ -100,7 +100,7 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-nav-item > a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--darkColor);
 }
 
@@ -254,4 +254,23 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+
+.inline-nav {
+    padding: 0;
+    color: var(--lightColorTransparent);
+}
+
+.inline-nav li {
+    display: inline-block;
+
+}
+
+.inline-nav a {
+  color: var(--lightColorTransparent);
+}
+
+.inline-nav a:hover {
+  color: var(--lightColor);
 }

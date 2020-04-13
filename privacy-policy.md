@@ -7,8 +7,8 @@ pagination:
 menu:
   bottomSidebar:
     weight: 2
-published: false
-
+    title: Privacy
+published: true
 ---
 <p >
   Your privacy is important to us. It is AKMiller Technologies

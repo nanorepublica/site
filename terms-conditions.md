@@ -6,9 +6,9 @@ pagination:
   enabled: false
 menu:
   bottomSidebar:
-    weight: 3
-published: false
-
+    weight: 1
+    title: Terms & Conditions
+published: true
 ---
 <h3>1. Terms</h3>
 <p >

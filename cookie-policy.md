@@ -6,8 +6,9 @@ pagination:
   enabled: false
 menu:
   bottomSidebar:
-    weight: 1
-published: false
+    weight: 3
+    title: Cookies
+published: true
 
 ---
 <p>

@@ -24,21 +24,21 @@
       </li>
     </ul>
 
-    <p style="line-height:1;">
+    <p style="line-height:1; margin-bottom: 0;">
     <small>
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.<br/>
         <!-- Disclaimer: All expressions of thought are mine and are bare no relation to anyone I maybe associated with. <br /> -->
-    Company Number: 12130681</small><br/>
+    Company Number: 12130681<br/>
 
-    {% assign bottom = site.menus.bottomSidebar.menu | map:"url" | uniq %}
-    {% assign bsidebar_title = site.menus.bottomSidebar.menu | map:"title" | uniq %}
-    {{ site.menus.bottomSidebar }}
-    {% for item in bottom %}
+
+    </small>
+    </p>
+    <ul class="inline-nav">
+    {% for item in site.menus.bottomSidebar.menu %}
       <li class="sidebar-nav-item{% if page.menu.bottomSidebar.url == item %} active{% endif %}">
-        <a href="{{ item | replace: 'index.html' '' }}">{{ bsidebar_title[forloop.index0] }}</a>
+        <small><a href="{{ item.url | replace: 'index.html' '' }}">{{ item.title }}</a></small>
       </li>
     {% endfor %}
-    </p>
-
+    </ul>
   </div>
 </div>
