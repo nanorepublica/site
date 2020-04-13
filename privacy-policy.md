@@ -8,7 +8,7 @@ menu:
   bottomSidebar:
     weight: 2
 published: false
-menus: bottomSidebar
+
 ---
 <p >
   Your privacy is important to us. It is AKMiller Technologies

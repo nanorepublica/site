@@ -13,10 +13,9 @@ notes: |-
   * Internal Web Security Course
 pagination:
   enabled: false
-menus: sidebar
 menu:
   sidebar:
-    weight: 4
+    weight: 7
 
 ---
 I am a freelance web designer and software engineer specialising in full-stack development based in Cambridge, UK. I love building out ideas especially when they empower others to improve their quality of life.

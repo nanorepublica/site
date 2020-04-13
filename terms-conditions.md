@@ -6,9 +6,9 @@ pagination:
   enabled: false
 menu:
   bottomSidebar:
-    weight: 1
+    weight: 3
 published: false
-menus: bottomSidebar
+
 ---
 <h3>1. Terms</h3>
 <p >

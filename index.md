@@ -15,7 +15,6 @@ items:
 - _portfolio-items/hollyandandrew-co-uk.md
 menu:
   sidebar:
-    weight: 1
-menus: sidebar
+    weight: 4
 
 ---

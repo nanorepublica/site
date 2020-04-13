@@ -4,10 +4,9 @@ title: Cookie Policy
 notes: ''
 pagination:
   enabled: false
-menus: bottomSidebar
 menu:
   bottomSidebar:
-    weight: 3
+    weight: 1
 published: false
 
 ---
