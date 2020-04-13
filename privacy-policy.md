@@ -4,7 +4,9 @@ title: Privacy Policy
 notes: ''
 pagination:
   enabled: false
-menus: ''
+menu:
+  bottom-sidebar:
+    weight: 2
 published: false
 
 ---

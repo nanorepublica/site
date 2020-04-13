@@ -4,7 +4,9 @@ title: Terms & Conditions
 notes: ''
 pagination:
   enabled: false
-menus: ''
+menu:
+  bottom-sidebar:
+    weight: 1
 published: false
 
 ---

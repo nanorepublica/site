@@ -4,10 +4,7 @@ title: work with me
 notes: ''
 pagination:
   enabled: false
-menus: ''
 menu:
-  '':
-    weight: 3
   sidebar:
     weight: 3
 
