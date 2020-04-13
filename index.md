@@ -16,5 +16,6 @@ items:
 menu:
   sidebar:
     weight: 1
+menus: sidebar
 
 ---

@@ -5,10 +5,10 @@ notes: ''
 pagination:
   enabled: false
 menu:
-  bottom-sidebar:
+  bottomSidebar:
     weight: 1
 published: false
-
+menus: bottomSidebar
 ---
 <h3>1. Terms</h3>
 <p >

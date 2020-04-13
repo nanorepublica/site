@@ -36,6 +36,7 @@ notes: |
     - pricing
 pagination:
   enabled: true
+menus: null
 menu:
   sidebar:
     weight: 2
