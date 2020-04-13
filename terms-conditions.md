@@ -10,11 +10,9 @@ published: false
 ---
 <h3>1. Terms</h3>
 <p >
-  By accessing the website at{" "}
-  <a
-    href="http://naptime.app"
-  >
-    http://naptime.app
+  By accessing the website at
+  <a href="https://softwarecrafts.uk">
+    https://softwarecrafts.uk
   </a>
   , you are agreeing to be bound by these terms of service, all
   applicable laws and regulations, and agree that you are
