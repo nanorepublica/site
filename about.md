@@ -15,7 +15,7 @@ pagination:
   enabled: false
 menu:
   sidebar:
-    weight: 7
+    weight: 1
 
 ---
 I am a freelance web designer and software engineer specialising in full-stack development based in Cambridge, UK. I love building out ideas especially when they empower others to improve their quality of life.

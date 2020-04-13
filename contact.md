@@ -6,7 +6,7 @@ pagination:
   enabled: false
 menu:
   sidebar:
-    weight: 3
+    weight: 2
 
 ---
 Got an idea, cause or charity?  
