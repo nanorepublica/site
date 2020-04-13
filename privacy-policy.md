@@ -17,7 +17,7 @@ published: false
 </p>
 <p >
   Our Sites include:
-  <ol type="a" >
+  <ol >
     <li ><a href="https://softwarecrafts.uk">Software Crafts</a></li>
     <li ><a href="https://naptime.app">naptime.app</a></li>
   </ol>
