@@ -15,4 +15,6 @@ Rite of Passage continues directly on from where the first book 'The Call of the
 
 Michael keeps the imagery vivid with rich descriptions of the locations and the action sequences that keep the reader turning page after page, until a cliff hanger of an ending means I cannot wait to devour the third book when I can get my hands on it!
 
-Once again the book is a short in length for a fantasy novel and again this is refreshing to have so much detail packed into the story and description without being drawn into unnecessary detail which creates an air of mystery that places you the reader with the characters in the story.
+Once again the book is a short in length for a fantasy novel and again this is refreshing to have so much detail packed into the story and description without being drawn into unnecessary detail which creates an air of mystery that places you the reader with the characters in the story, journeying with them to the Mountain.
+
+All in all, this is another excellent book from Michael and one I throughly can recommend! Available [online](https://worldofastrom.com/buy-the-book/ "World or Astrom") or order it at your local book store (if they are open!) 
