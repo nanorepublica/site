@@ -14,6 +14,8 @@ However I did find I was fighting the swiggly lines in my editor from eslint and
 
 _Note: This is mostly for my own reference and will be updated from time to time as I discover newer options and tools._
 
+First up is my `tsconfig.json`, I expect this to change as I understand the power of typescript.
+
     /* tsconfig.json */
     {
       "compilerOptions": {
@@ -35,3 +37,66 @@ _Note: This is mostly for my own reference and will be updated from time to time
         "./src/**/*"
       ]
     }
+
+Next is my devDependencies snipped from `package.json`
+
+      "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.8.2",
+        "@typescript-eslint/parser": "^4.8.2",
+        "eslint": "^7.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.3",
+        "prettier": "^2.0.5",
+        "typescript": "^4.1.2"
+      },
+
+Next is my `.prettierrc` file for formatting
+
+    {
+      "trailingComma": "es5",
+      "tabWidth": 2,
+      "semi": false,
+      "singleQuote": false,
+      "printWidth": 120
+    }
+
+and finally my `.eslintrc.js` file:
+
+    module.exports = {
+      parser: `@typescript-eslint/parser`,
+      extends: [`plugin:@typescript-eslint/recommended`, `plugin:prettier/recommended`, `prettier/@typescript-eslint`],
+      plugins: [`@typescript-eslint`, `prettier`],
+      parserOptions: {
+        ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+        sourceType: `module`, // Allows for the use of imports
+      },
+      env: {
+        browser: true,
+        node: true,
+      },
+      rules: {
+        quotes: `off`,
+        "@typescript-eslint/quotes": [
+          2,
+          `backtick`,
+          {
+            avoidEscape: true,
+          },
+        ],
+        indent: [`error`, 2, { SwitchCase: 1 }],
+        "prettier/prettier": [
+          `error`,
+          {
+            trailingComma: `es5`,
+            semi: false,
+            singleQuote: false,
+            printWidth: 120,
+          },
+        ],
+        "@typescript-eslint/explicit-function-return-type": `off`,
+      },
+    }
+
+I suspect I will need to tweak my `tsconfig` and my `eslint` but for now these are making my development experience somewhat sensible.
+
+If you have any improvements on these files then please let me know!
